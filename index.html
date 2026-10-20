@@ -1249,25 +1249,36 @@
         </div>
 
         <div class="tracking-box">
-          <form id="trackingForm">
-            <label for="trackingNumber">Shipment or Tracking Reference</label>
-            <div class="tracking-form-row">
-              <input type="text" id="trackingNumber" name="trackingNumber" placeholder="Enter your shipment reference" autocomplete="off" required>
-              <button class="btn" type="submit">Submit Enquiry</button>
-            </div>
-          </form>
+          
+<form id="trackingForm">
+  <label for="trackingNumber">Shipment or Tracking Reference</label>
+  <div class="tracking-form-row">
+    <input
+      type="text"
+      id="trackingNumber"
+      name="trackingNumber"
+      placeholder="Enter your shipment reference"
+      autocomplete="off"
+      required
+    >
+    <button class="btn" type="submit">Track Shipment</button>
+  </div>
+</form>
 
-          <div class="tracking-notice">
-            <strong>Important:</strong> This form is not connected to live
-            carrier tracking. Submitting a reference does not retrieve live
-            shipment status or confirm that a shipment exists. Contact our
-            team to request an update.
-          </div>
+<div class="tracking-notice">
+  <strong>Tracking information:</strong>
+  This page displays the latest shipment status recorded by
+  Solvanta Logistics staff. Updates are entered manually and
+  do not represent live GPS or automatic carrier tracking.
+</div>
 
-          <div class="tracking-result" id="trackingResult" role="status" aria-live="polite" hidden></div>
-        </div>
-      </div>
-    </section>
+<div
+  class="tracking-result"
+  id="trackingResult"
+  role="status"
+  aria-live="polite"
+  hidden
+></div>
 
     <!-- Collapsible policies -->
     <section class="section solvanta-policies" id="policies">
@@ -1716,6 +1727,8 @@
         "info@solvantalogistics.com or call +1 971 361 5379 to request an update.";
     });
   </script>
+
+<script src="tracking.js"></script>
 
 </body>
 </html>
