@@ -83,23 +83,73 @@
 
       const specialStatus = ["On Hold", "Cancelled"].includes(status);
 
-      const timeline = stages.map((stage, index) => {
-        let symbol = String(index + 1);
-        let color = "#d0d5dd";
-        let titleColor = "#667085";
-        let description = "Awaiting this stage";
+      
+const eventByStatus = new Map();
 
-        if (currentIndex >= 0 && index < currentIndex) {
-          symbol = "✓";
-          color = "#16845b";
-          titleColor = "#16845b";
-          description = "Stage completed";
-        } else if (index === currentIndex) {
-          symbol = "●";
-          color = "#2457c5";
-          titleColor = "#2457c5";
-          description = "Current recorded stage";
-        }
+for (const event of events) {
+  if (!eventByStatus.has(event.status)) {
+    eventByStatus.set(event.status, event);
+  }
+}
+
+const timeline = stages.map((stage, index) => {
+  const event = eventByStatus.get(stage);
+  const isCurrent = stage === status;
+  const isRecorded = Boolean(event);
+
+  // Only mark a previous stage complete when its
+  // corresponding public event exists in the database.
+  const isCompleted =
+    !isCurrent &&
+    isRecorded &&
+    currentIndex >= 0 &&
+    index < currentIndex;
+
+  let symbol = String(index + 1);
+  let color = "#d0d5dd";
+  let titleColor = "#667085";
+  let description = "No recorded event";
+
+  if (isCompleted) {
+    symbol = "✓";
+    color = "#16845b";
+    titleColor = "#16845b";
+    description = `Recorded ${dateText(event.created_at)}`;
+  } else if (isCurrent) {
+    symbol = "●";
+    color = "#2457c5";
+    titleColor = "#2457c5";
+    description = "Current recorded stage";
+  } else if (isRecorded) {
+    description = `Recorded ${dateText(event.created_at)}`;
+  }
+
+  return `
+    <div style="display:flex;gap:12px;min-height:68px">
+      <div style="display:flex;flex-direction:column;align-items:center">
+        ${icon(symbol, color)}
+        ${index < stages.length - 1
+          ? `<div style="width:2px;flex:1;min-height:20px;background:${
+              isCompleted ? "#16845b" : "#e4e7ec"
+            }"></div>`
+          : ""}
+      </div>
+
+      <div style="padding-bottom:16px;flex:1">
+        <div style="font-weight:600;color:${titleColor}">
+          ${esc(stage)}
+        </div>
+        <div style="font-size:13px;color:#667085">
+          ${esc(description)}
+        </div>
+      </div>
+
+      ${isCurrent
+        ? `<span style="font-size:12px;color:#2457c5;font-weight:600">Current</span>`
+        : ""}
+    </div>`;
+}).join("");
+
 
         return `
           <div style="display:flex;gap:12px;min-height:68px">
