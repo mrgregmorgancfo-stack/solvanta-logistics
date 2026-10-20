@@ -1703,25 +1703,6 @@
       });
     });
 
-    // Demo tracking form: this does not retrieve live carrier data.
-    const trackingForm = document.getElementById("trackingForm");
-    const trackingNumberInput = document.getElementById("trackingNumber");
-    const trackingResult = document.getElementById("trackingResult");
-
-    trackingForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      const reference = trackingNumberInput.value.trim();
-
-      if (!reference) {
-        trackingResult.hidden = false;
-        trackingResult.textContent =
-          "Please enter a shipment or tracking reference.";
-        return;
-      }
-
-      trackingResult.hidden = false;
-trackingResult.textContent = "";
     });
   </script>
 
