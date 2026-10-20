@@ -3,16 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Solvanta Logistics | Your World. Our Network.</title>
-
-  <meta name="description" content="Solvanta Logistics coordinates international shipping, freight, container transport, warehousing and delivery services through logistics partners. Contact us for a shipping quote.">
-
+  <meta name="description" content="Solvanta Logistics coordinates international shipping, freight, cargo handling, storage and delivery through logistics partners. Contact us for a shipping quote.">
   <meta name="theme-color" content="#102442">
-  <meta property="og:title" content="Solvanta Logistics | Your World. Our Network.">
-  <meta property="og:description" content="International shipping and logistics coordination, built around clear communication and dependable service.">
-  <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +17,7 @@
     :root {
       --navy: #102442;
       --navy-dark: #09182d;
-      --navy-light: #1e3b62;
+      --navy-light: #243e63;
       --gold: #c9a34a;
       --gold-light: #e2c777;
       --white: #ffffff;
@@ -30,15 +25,10 @@
       --text: #263449;
       --muted: #657186;
       --border: #e1e7ef;
-      --shadow: 0 12px 35px rgba(16, 36, 66, 0.09);
-      --radius: 10px;
+      --shadow: 0 10px 30px rgba(16,36,66,.08);
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html {
       scroll-behavior: smooth;
@@ -52,79 +42,57 @@
       background: var(--white);
     }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    button,
-    input,
-    select,
-    textarea {
-      font: inherit;
-    }
-
-    button,
-    a {
-      -webkit-tap-highlight-color: transparent;
-    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button, input, select, textarea { font: inherit; }
 
     .container {
       width: min(1160px, calc(100% - 40px));
       margin: 0 auto;
     }
 
-    .section {
-      padding: 85px 0;
-    }
+    .section { padding: 80px 0; }
 
     .section-heading {
-      text-align: center;
       max-width: 760px;
-      margin: 0 auto 48px;
+      margin: 0 auto 42px;
+      text-align: center;
     }
 
     .eyebrow {
       color: #987426;
-      font-size: 0.8rem;
-      text-transform: uppercase;
+      font-size: .8rem;
       letter-spacing: 2px;
       font-weight: 800;
+      text-transform: uppercase;
       margin-bottom: 12px;
     }
 
     .section-heading h2 {
-      color: var(--navy);
       font-family: "Montserrat", Arial, sans-serif;
+      color: var(--navy);
       font-size: clamp(1.8rem, 4vw, 2.65rem);
       line-height: 1.25;
-      margin-bottom: 18px;
+      margin-bottom: 17px;
     }
 
-    .section-heading p {
-      color: var(--muted);
-      font-size: 1rem;
-    }
+    .section-heading p { color: var(--muted); }
 
     .btn {
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      gap: 9px;
-      padding: 14px 24px;
+      gap: 8px;
       min-height: 48px;
+      padding: 13px 23px;
       border: 2px solid transparent;
       border-radius: 5px;
       background: var(--gold);
       color: var(--navy-dark);
-      text-decoration: none;
       font-weight: 800;
+      text-decoration: none;
       cursor: pointer;
-      transition: background 0.2s ease, transform 0.2s ease;
+      transition: background .2s ease, transform .2s ease;
     }
 
     .btn:hover {
@@ -137,12 +105,10 @@
       color: var(--white);
     }
 
-    .btn-primary:hover {
-      background: var(--navy-light);
-    }
+    .btn-primary:hover { background: var(--navy-light); }
 
     .btn-outline {
-      border-color: rgba(255, 255, 255, 0.8);
+      border-color: rgba(255,255,255,.8);
       color: var(--white);
       background: transparent;
     }
@@ -160,19 +126,19 @@
     /* Navigation */
 
     .site-header {
-      background: var(--white);
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 15px rgba(9, 24, 45, 0.08);
+      background: var(--white);
+      box-shadow: 0 2px 15px rgba(9,24,45,.08);
     }
 
     .navbar {
-      min-height: 82px;
+      min-height: 80px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 25px;
+      gap: 24px;
     }
 
     .brand {
@@ -186,31 +152,30 @@
     .brand-mark {
       width: 43px;
       height: 43px;
-      border-radius: 8px;
       display: grid;
       place-items: center;
+      border-radius: 7px;
+      border-bottom: 3px solid var(--gold);
       background: var(--navy);
       color: var(--gold-light);
       font-family: "Montserrat", Arial, sans-serif;
       font-size: 1.35rem;
       font-weight: 800;
-      border-bottom: 3px solid var(--gold);
     }
 
     .brand-name {
       display: block;
       color: var(--navy);
       font-family: "Montserrat", Arial, sans-serif;
-      font-size: 1.1rem;
-      line-height: 1.3;
+      font-size: 1rem;
+      line-height: 1.35;
       font-weight: 800;
-      letter-spacing: 0.2px;
     }
 
     .brand-tagline {
       display: block;
-      font-size: 0.7rem;
-      color: #8c6d2c;
+      color: #987426;
+      font-size: .68rem;
       letter-spacing: 1px;
       text-transform: uppercase;
       margin-top: 3px;
@@ -219,26 +184,24 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 22px;
+      gap: 19px;
       list-style: none;
     }
 
     .nav-links a {
       color: var(--navy);
-      text-decoration: none;
-      font-size: 0.88rem;
+      font-size: .85rem;
       font-weight: 700;
+      text-decoration: none;
       white-space: nowrap;
     }
 
-    .nav-links a:hover {
-      color: #987426;
-    }
+    .nav-links a:hover { color: #987426; }
 
     .nav-links .nav-cta {
       background: var(--navy);
       color: var(--white);
-      padding: 11px 16px;
+      padding: 10px 15px;
       border-radius: 5px;
     }
 
@@ -249,11 +212,11 @@
 
     .menu-toggle {
       display: none;
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--navy);
       padding: 8px 12px;
+      border: 1px solid var(--border);
       border-radius: 5px;
+      background: var(--white);
+      color: var(--navy);
       font-size: 1.3rem;
       cursor: pointer;
     }
@@ -262,27 +225,27 @@
 
     .hero {
       position: relative;
-      min-height: 600px;
       display: flex;
       align-items: center;
+      min-height: 600px;
       color: var(--white);
       background:
-        linear-gradient(90deg, rgba(7, 22, 43, 0.94) 0%, rgba(7, 22, 43, 0.78) 52%, rgba(7, 22, 43, 0.35) 100%),
+        linear-gradient(90deg, rgba(7,22,43,.94), rgba(7,22,43,.72) 57%, rgba(7,22,43,.35)),
         url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1800&q=85") center/cover no-repeat;
     }
 
     .hero-content {
       max-width: 780px;
-      padding: 95px 0;
+      padding: 90px 0;
     }
 
     .hero-label {
       display: inline-block;
       color: var(--gold-light);
-      text-transform: uppercase;
+      font-size: .82rem;
       letter-spacing: 2px;
-      font-size: 0.82rem;
       font-weight: 800;
+      text-transform: uppercase;
       margin-bottom: 20px;
     }
 
@@ -290,140 +253,129 @@
       font-family: "Montserrat", Arial, sans-serif;
       font-size: clamp(2.5rem, 6vw, 4.5rem);
       line-height: 1.1;
+      letter-spacing: -1px;
       margin-bottom: 24px;
-      letter-spacing: -1.5px;
     }
 
-    .hero h1 span {
-      color: var(--gold-light);
-    }
+    .hero h1 span { color: var(--gold-light); }
 
     .hero p {
       max-width: 660px;
       color: #e5ebf3;
-      font-size: 1.08rem;
+      font-size: 1.06rem;
       line-height: 1.85;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     .hero-actions {
       display: flex;
-      gap: 14px;
       flex-wrap: wrap;
+      gap: 14px;
     }
 
     .hero-note {
-      margin-top: 25px;
+      margin-top: 24px;
       color: #e2e9f2;
-      font-size: 0.85rem;
+      font-size: .84rem;
     }
 
     /* Trust strip */
 
     .trust-strip {
+      padding: 25px 0;
       background: var(--navy);
       color: var(--white);
-      padding: 25px 0;
     }
 
     .trust-strip-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 24px;
     }
 
     .trust-strip-item {
       display: flex;
       align-items: center;
       gap: 14px;
-      padding: 5px 10px;
     }
 
     .trust-icon {
       color: var(--gold-light);
-      font-size: 1.6rem;
-      line-height: 1;
+      font-size: 1.65rem;
     }
 
     .trust-strip-item strong {
       display: block;
-      font-size: 0.95rem;
-      margin-bottom: 3px;
+      font-size: .94rem;
     }
 
     .trust-strip-item span:last-child {
       display: block;
       color: #cbd5e3;
-      font-size: 0.8rem;
+      font-size: .8rem;
     }
 
     /* Services */
 
-    .services {
-      background: var(--white);
-    }
+    .services { background: var(--white); }
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0,1fr));
       gap: 24px;
     }
 
     .service-card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
       overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 10px;
       background: var(--white);
-      box-shadow: 0 5px 20px rgba(16, 36, 66, 0.04);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 5px 20px rgba(16,36,66,.04);
+      transition: transform .2s ease, box-shadow .2s ease;
     }
 
     .service-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
       box-shadow: var(--shadow);
     }
 
     .service-card img {
       width: 100%;
-      height: 215px;
+      height: 210px;
       object-fit: cover;
       background: #e9edf3;
     }
 
-    .service-content {
-      padding: 25px;
-    }
+    .service-content { padding: 24px; }
 
     .service-content h3 {
-      font-family: "Montserrat", Arial, sans-serif;
       color: var(--navy);
-      font-size: 1.12rem;
-      margin-bottom: 12px;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 1.08rem;
+      margin-bottom: 11px;
     }
 
     .service-content p {
       color: var(--muted);
-      font-size: 0.93rem;
+      font-size: .92rem;
     }
 
     /* How we work */
 
-    .solvanta-trust {
-      background: var(--light);
-    }
+    .solvanta-trust { background: var(--light); }
 
     .trust-steps {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0,1fr));
       gap: 20px;
     }
 
     .trust-card {
-      background: var(--white);
-      padding: 27px 22px;
+      padding: 25px 21px;
       border: 1px solid var(--border);
       border-top: 3px solid var(--gold);
-      border-radius: var(--radius);
+      border-radius: 9px;
+      background: var(--white);
     }
 
     .trust-number {
@@ -431,34 +383,33 @@
       height: 42px;
       display: grid;
       place-items: center;
+      border-radius: 50%;
       background: var(--navy);
       color: var(--white);
-      border-radius: 50%;
       font-weight: 800;
-      margin-bottom: 18px;
+      margin-bottom: 17px;
     }
 
     .trust-card h3 {
       color: var(--navy);
       font-family: "Montserrat", Arial, sans-serif;
-      font-size: 1.05rem;
-      line-height: 1.45;
-      margin-bottom: 12px;
+      font-size: 1.02rem;
+      margin-bottom: 11px;
     }
 
     .trust-card p {
       color: var(--muted);
-      font-size: 0.91rem;
+      font-size: .91rem;
     }
 
     .trust-note,
     .policy-note {
-      margin-top: 28px;
-      padding: 23px 25px;
-      background: var(--white);
+      padding: 22px 24px;
       border-left: 4px solid var(--gold);
       border-radius: 5px;
+      background: var(--white);
       color: var(--muted);
+      margin-top: 28px;
     }
 
     .trust-note strong,
@@ -471,20 +422,18 @@
     .trust-action,
     .policy-action {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 28px;
     }
 
     /* Image showcase */
 
-    .showcase {
-      background: var(--white);
-    }
+    .showcase { background: var(--white); }
 
     .showcase-grid {
       display: grid;
       grid-template-columns: 1.2fr 1fr 1fr;
       grid-template-rows: 230px 230px;
-      gap: 18px;
+      gap: 17px;
     }
 
     .showcase-item {
@@ -494,55 +443,46 @@
       background: #e9edf3;
     }
 
-    .showcase-item:first-child {
-      grid-row: span 2;
-    }
+    .showcase-item:first-child { grid-row: span 2; }
 
     .showcase-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.35s ease;
+      transition: transform .35s ease;
     }
 
-    .showcase-item:hover img {
-      transform: scale(1.05);
-    }
+    .showcase-item:hover img { transform: scale(1.05); }
 
     .showcase-item span {
       position: absolute;
-      left: 0;
       right: 0;
       bottom: 0;
+      left: 0;
       padding: 30px 18px 18px;
       color: var(--white);
       font-family: "Montserrat", Arial, sans-serif;
       font-weight: 700;
-      background: linear-gradient(transparent, rgba(7, 22, 43, 0.88));
+      background: linear-gradient(transparent, rgba(7,22,43,.9));
     }
 
-    /* Tracking */
+    /* Shipment tracking demo */
 
     .tracking {
       background: var(--navy);
       color: var(--white);
     }
 
-    .tracking .section-heading h2 {
-      color: var(--white);
-    }
-
-    .tracking .section-heading p {
-      color: #cbd5e3;
-    }
+    .tracking .section-heading h2 { color: var(--white); }
+    .tracking .section-heading p { color: #cbd5e3; }
 
     .tracking-box {
       max-width: 760px;
       margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
       background: var(--white);
       color: var(--text);
-      border-radius: var(--radius);
-      padding: 32px;
       box-shadow: var(--shadow);
     }
 
@@ -561,20 +501,19 @@
     .tracking-box input {
       min-width: 0;
       flex: 1;
-      padding: 14px;
+      padding: 13px;
       border: 1px solid #cfd7e2;
       border-radius: 5px;
-      color: var(--text);
       background: var(--white);
     }
 
     .tracking-notice {
-      margin-top: 18px;
-      padding: 14px 16px;
-      background: #f5f7fa;
+      margin-top: 17px;
+      padding: 14px;
       border-radius: 5px;
+      background: var(--light);
       color: var(--muted);
-      font-size: 0.87rem;
+      font-size: .87rem;
     }
 
     .tracking-result {
@@ -586,115 +525,168 @@
       overflow-wrap: anywhere;
     }
 
-    /* Policies */
+    /* Collapsible policy dropdown */
 
-    .solvanta-policies {
-      background: var(--light);
+    .solvanta-policies { background: var(--white); }
+
+    .policy-dropdown {
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    .policy-grid {
+    .policy-details {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .policy-details > summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 24px 27px;
+      border-left: 4px solid var(--gold);
+      color: var(--navy);
+      background: var(--white);
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .policy-details > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .policy-details > summary:hover { background: #f8f9fb; }
+
+    .policy-details > summary strong {
+      display: block;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 1.04rem;
+      line-height: 1.5;
+    }
+
+    .policy-details > summary small {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: .84rem;
+      line-height: 1.6;
+    }
+
+    .policy-chevron {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
+      place-items: center;
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 1.45rem;
+      transition: transform .2s ease;
+    }
+
+    .policy-details[open] .policy-chevron {
+      transform: rotate(45deg);
+    }
+
+    .policy-dropdown-content {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 18px;
+      padding: 23px;
+      border-top: 1px solid var(--border);
     }
 
     .policy-card {
-      padding: 28px 25px;
-      background: var(--white);
+      min-width: 0;
+      padding: 22px;
       border: 1px solid var(--border);
       border-top: 3px solid var(--gold);
-      border-radius: var(--radius);
+      border-radius: 7px;
+      background: var(--white);
     }
 
     .policy-card h3 {
-      font-family: "Montserrat", Arial, sans-serif;
       color: var(--navy);
-      font-size: 1.08rem;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 1rem;
       line-height: 1.5;
-      margin-bottom: 13px;
+      margin-bottom: 12px;
     }
 
     .policy-card p,
     .policy-card li {
       color: var(--muted);
-      font-size: 0.91rem;
+      font-size: .9rem;
       line-height: 1.8;
     }
 
-    .policy-card p + p {
-      margin-top: 12px;
-    }
+    .policy-card p + p { margin-top: 12px; }
 
     .policy-card ul {
       padding-left: 20px;
       margin-top: 10px;
     }
 
-    .policy-card li {
-      margin-bottom: 8px;
+    .policy-card li { margin-bottom: 8px; }
+
+    .policy-dropdown-content .policy-note {
+      grid-column: 1 / -1;
+      margin-top: 0;
+      background: var(--light);
+      overflow-wrap: anywhere;
     }
 
     .policy-note a {
       color: var(--navy);
       font-weight: 700;
-      overflow-wrap: anywhere;
-    }
-
-    .policy-last-updated {
-      color: var(--muted);
-      font-size: 0.83rem;
-      margin-top: 25px;
-      text-align: center;
     }
 
     /* Contact */
 
-    .contact {
-      background: var(--white);
-    }
+    .contact { background: var(--white); }
 
     .contact-grid {
       display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 48px;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 45px;
       align-items: start;
     }
 
-    .contact-info h3 {
+    .contact-info h3,
+    .contact-form h3 {
       color: var(--navy);
       font-family: "Montserrat", Arial, sans-serif;
-      font-size: 1.45rem;
-      margin-bottom: 16px;
+      font-size: 1.35rem;
+      margin-bottom: 12px;
     }
 
-    .contact-info > p {
-      color: var(--muted);
-      margin-bottom: 25px;
-    }
+    .contact-info > p { color: var(--muted); margin-bottom: 25px; }
 
     .contact-item {
       display: flex;
+      align-items: flex-start;
       gap: 14px;
       margin-bottom: 20px;
-      align-items: flex-start;
     }
 
     .contact-item-icon {
       display: grid;
       place-items: center;
+      flex-shrink: 0;
       width: 42px;
       height: 42px;
-      flex-shrink: 0;
+      border-radius: 7px;
       background: #edf1f6;
       color: var(--navy);
-      border-radius: 7px;
       font-size: 1.15rem;
     }
 
-    .contact-item h4 {
-      color: var(--navy);
-      margin-bottom: 3px;
-    }
+    .contact-item h4 { color: var(--navy); margin-bottom: 3px; }
 
     .contact-item p,
     .contact-item a {
@@ -703,45 +695,34 @@
       overflow-wrap: anywhere;
     }
 
-    .contact-item a:hover {
-      color: #987426;
-    }
+    .contact-item a:hover { color: #987426; }
 
     .contact-form {
-      background: var(--white);
+      padding: 29px;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 30px;
+      border-radius: 10px;
+      background: var(--white);
       box-shadow: var(--shadow);
-    }
-
-    .contact-form h3 {
-      color: var(--navy);
-      font-family: "Montserrat", Arial, sans-serif;
-      font-size: 1.35rem;
-      margin-bottom: 7px;
     }
 
     .form-intro {
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: .9rem;
       margin-bottom: 22px;
     }
 
     .form-row {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 15px;
     }
 
-    .form-group {
-      margin-bottom: 17px;
-    }
+    .form-group { margin-bottom: 16px; }
 
     .form-group label {
       display: block;
       color: var(--navy);
-      font-size: 0.9rem;
+      font-size: .9rem;
       font-weight: 700;
       margin-bottom: 7px;
     }
@@ -762,124 +743,90 @@
       resize: vertical;
     }
 
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: 2px solid var(--gold);
-      outline-offset: 1px;
-      border-color: var(--gold);
-    }
-
     .form-privacy {
       color: var(--muted);
-      font-size: 0.8rem;
-      margin-bottom: 18px;
+      font-size: .8rem;
+      margin-bottom: 17px;
     }
 
-    .form-privacy a {
-      color: var(--navy);
-      font-weight: 700;
-    }
+    .form-privacy a { color: var(--navy); font-weight: 700; }
 
-    .contact-form .btn {
-      width: 100%;
-      border: none;
-    }
+    .contact-form button { width: 100%; border: 0; }
 
     /* Footer */
 
     .site-footer {
+      padding: 52px 0 20px;
       background: var(--navy-dark);
       color: var(--white);
-      padding: 55px 0 20px;
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 1.4fr 1fr 1fr;
-      gap: 40px;
-      padding-bottom: 35px;
+      gap: 38px;
+      padding-bottom: 34px;
     }
 
-    .footer-brand .brand-name {
-      color: var(--white);
-    }
-
-    .footer-brand .brand-tagline {
-      color: var(--gold-light);
-    }
+    .footer-brand .brand-name { color: var(--white); }
+    .footer-brand .brand-tagline { color: var(--gold-light); }
 
     .footer-brand > p {
-      color: #c2ccda;
-      font-size: 0.9rem;
-      margin-top: 18px;
       max-width: 360px;
+      margin-top: 17px;
+      color: #c2ccda;
+      font-size: .9rem;
     }
 
     .footer-column h3 {
+      color: var(--gold-light);
       font-family: "Montserrat", Arial, sans-serif;
       font-size: 1rem;
-      margin-bottom: 17px;
-      color: var(--gold-light);
+      margin-bottom: 15px;
     }
 
-    .footer-column ul {
-      list-style: none;
-    }
-
-    .footer-column li {
-      margin-bottom: 10px;
-    }
+    .footer-column ul { list-style: none; }
+    .footer-column li { margin-bottom: 9px; }
 
     .footer-column a {
       color: #d0d8e4;
+      font-size: .9rem;
       text-decoration: none;
-      font-size: 0.9rem;
     }
 
-    .footer-column a:hover {
-      color: var(--gold-light);
-    }
+    .footer-column a:hover { color: var(--gold-light); }
 
     .footer-bottom {
-      border-top: 1px solid rgba(255, 255, 255, 0.15);
-      padding-top: 20px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      gap: 15px;
       flex-wrap: wrap;
+      gap: 14px;
+      padding-top: 19px;
+      border-top: 1px solid rgba(255,255,255,.15);
       color: #b9c5d4;
-      font-size: 0.82rem;
+      font-size: .82rem;
     }
 
-    .footer-bottom a {
-      color: #d0d8e4;
-      text-decoration: none;
-    }
-
-    /* WhatsApp contact button */
+    /* WhatsApp button */
 
     .whatsapp-float {
       position: fixed;
-      bottom: 22px;
       right: 22px;
+      bottom: 22px;
       z-index: 900;
-      width: 58px;
-      height: 58px;
+      display: grid;
+      place-items: center;
+      width: 57px;
+      height: 57px;
       border-radius: 50%;
       background: #20bd5a;
       color: var(--white);
       text-decoration: none;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.22);
-      transition: transform 0.2s ease;
+      box-shadow: 0 5px 20px rgba(0,0,0,.22);
+      transition: transform .2s ease;
     }
 
-    .whatsapp-float:hover {
-      transform: scale(1.07);
-    }
+    .whatsapp-float:hover { transform: scale(1.07); }
 
     .whatsapp-float svg {
       width: 30px;
@@ -887,41 +834,20 @@
       fill: currentColor;
     }
 
-    /* Responsive design */
+    /* Responsive layout */
 
     @media (max-width: 1000px) {
-      .nav-links {
-        gap: 14px;
-      }
-
-      .nav-links a {
-        font-size: 0.81rem;
-      }
-
-      .trust-steps {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .services-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .showcase-grid {
-        grid-template-rows: 200px 200px;
-      }
+      .nav-links { gap: 12px; }
+      .nav-links a { font-size: .78rem; }
+      .trust-steps { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .services-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .showcase-grid { grid-template-rows: 200px 200px; }
     }
 
     @media (max-width: 780px) {
-      .navbar {
-        min-height: 74px;
-        flex-wrap: wrap;
-        padding-top: 12px;
-        padding-bottom: 12px;
-      }
+      .navbar { min-height: 74px; flex-wrap: wrap; padding: 10px 0; }
 
-      .menu-toggle {
-        display: block;
-      }
+      .menu-toggle { display: block; }
 
       .nav-links {
         display: none;
@@ -929,48 +855,32 @@
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        padding: 8px 0 12px;
+        padding: 5px 0 12px;
       }
 
-      .nav-links.is-open {
-        display: flex;
-      }
-
-      .nav-links li {
-        width: 100%;
-      }
+      .nav-links.is-open { display: flex; }
+      .nav-links li { width: 100%; }
 
       .nav-links a {
         display: block;
-        padding: 12px 10px;
-        font-size: 0.93rem;
+        padding: 11px 9px;
+        font-size: .93rem;
       }
 
       .nav-links .nav-cta {
-        margin-top: 6px;
+        margin-top: 5px;
         text-align: center;
       }
 
-      .hero {
-        min-height: 550px;
-      }
+      .hero { min-height: 540px; }
+      .hero-content { padding: 70px 0; }
 
-      .hero-content {
-        padding: 75px 0;
-      }
+      .trust-strip-grid { grid-template-columns: 1fr; gap: 17px; }
 
-      .trust-strip-grid {
-        grid-template-columns: 1fr;
-        gap: 17px;
-      }
-
-      .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-      }
+      .contact-grid { grid-template-columns: 1fr; gap: 35px; }
 
       .showcase-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0,1fr));
         grid-template-rows: 220px 180px 180px;
       }
 
@@ -979,99 +889,58 @@
         grid-row: auto;
       }
 
-      .footer-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .footer-brand {
-        grid-column: span 2;
-      }
+      .footer-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .footer-brand { grid-column: span 2; }
     }
 
     @media (max-width: 560px) {
-      .container {
-        width: min(100% - 30px, 1160px);
-      }
+      .container { width: calc(100% - 30px); }
+      .section { padding: 58px 0; }
+      .hero { min-height: 560px; }
 
-      .section {
-        padding: 60px 0;
-      }
+      .hero h1 { font-size: clamp(2.3rem, 10vw, 3.4rem); }
+      .hero p { font-size: .97rem; }
 
-      .hero {
-        min-height: 570px;
-      }
-
-      .hero h1 {
-        font-size: clamp(2.35rem, 11vw, 3.4rem);
-      }
-
-      .hero p {
-        font-size: 0.98rem;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .hero-actions .btn {
-        width: 100%;
-      }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .hero-actions .btn { width: 100%; }
 
       .services-grid,
       .trust-steps,
-      .policy-grid {
+      .policy-dropdown-content {
         grid-template-columns: 1fr;
       }
 
-      .service-card img {
-        height: 205px;
-      }
+      .service-card img { height: 205px; }
 
       .showcase-grid {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 220px 150px 150px;
+        grid-template-rows: 210px 150px 150px;
         gap: 10px;
       }
 
-      .tracking-box {
-        padding: 22px 17px;
+      .tracking-box { padding: 22px 17px; }
+
+      .tracking-form-row { flex-direction: column; }
+      .tracking-form-row .btn { width: 100%; }
+
+      .policy-details > summary {
+        padding: 19px 15px;
+        gap: 12px;
       }
 
-      .tracking-form-row {
-        flex-direction: column;
-      }
+      .policy-details > summary strong { font-size: .94rem; }
+      .policy-details > summary small { font-size: .78rem; }
 
-      .tracking-form-row .btn {
-        width: 100%;
-      }
+      .policy-dropdown-content { padding: 14px; gap: 14px; }
+      .policy-card { padding: 19px; }
 
-      .policy-card {
-        padding: 23px 19px;
-      }
+      .contact-form { padding: 22px 17px; }
+      .form-row { grid-template-columns: 1fr; gap: 0; }
 
-      .contact-form {
-        padding: 23px 18px;
-      }
+      .footer-grid { grid-template-columns: 1fr; gap: 26px; }
+      .footer-brand { grid-column: auto; }
 
-      .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 28px;
-      }
-
-      .footer-brand {
-        grid-column: auto;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
 
       .whatsapp-float {
         right: 15px;
@@ -1082,16 +951,10 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      *,
-      *::before,
-      *::after {
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
       }
     }
   </style>
@@ -1103,6 +966,7 @@
   <header class="site-header">
     <div class="container">
       <nav class="navbar" aria-label="Main navigation">
+
         <a class="brand" href="#home" aria-label="Solvanta Logistics home">
           <span class="brand-mark" aria-hidden="true">S</span>
           <span>
@@ -1117,9 +981,7 @@
           type="button"
           aria-label="Open navigation menu"
           aria-expanded="false"
-          aria-controls="navLinks">
-          ☰
-        </button>
+          aria-controls="navLinks">☰</button>
 
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
@@ -1130,6 +992,7 @@
           <li><a href="#contact">Contact</a></li>
           <li><a class="nav-cta" href="#contact">Get a Quote</a></li>
         </ul>
+
       </nav>
     </div>
   </header>
@@ -1141,7 +1004,6 @@
       <div class="container">
         <div class="hero-content">
           <span class="hero-label">International Logistics Coordination</span>
-
           <h1>Your World.<br><span>Our Network.</span></h1>
 
           <p>
@@ -1156,10 +1018,10 @@
             <a class="btn btn-outline" href="#services">Explore Our Services</a>
           </div>
 
-          <div class="hero-note">
-            International shipping arrangements tailored to your cargo,
-            destination and service requirements.
-          </div>
+          <p class="hero-note">
+            Shipping arrangements tailored to your cargo, destination
+            and service requirements.
+          </p>
         </div>
       </div>
     </section>
@@ -1168,6 +1030,7 @@
     <section class="trust-strip" aria-label="Our service approach">
       <div class="container">
         <div class="trust-strip-grid">
+
           <div class="trust-strip-item">
             <span class="trust-icon" aria-hidden="true">◎</span>
             <div>
@@ -1180,7 +1043,7 @@
             <span class="trust-icon" aria-hidden="true">◇</span>
             <div>
               <strong>Clear Communication</strong>
-              <span>Understand the arrangements before booking</span>
+              <span>Understand arrangements before booking</span>
             </div>
           </div>
 
@@ -1188,9 +1051,10 @@
             <span class="trust-icon" aria-hidden="true">✓</span>
             <div>
               <strong>Customer-Focused Service</strong>
-              <span>Support throughout the coordination process</span>
+              <span>Support throughout coordination</span>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -1204,98 +1068,57 @@
           <p>
             From freight coordination to delivery arrangements, we help
             customers explore shipping options suited to their cargo and
-            destination. Availability is confirmed for each individual request.
+            destination. Availability is confirmed for each request.
           </p>
         </div>
 
         <div class="services-grid">
 
           <article class="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=800&auto=format&fit=crop&q=80"
-              alt="Cargo containers aboard a freight ship"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=800&auto=format&fit=crop&q=80" alt="Cargo containers and freight shipping" loading="lazy">
             <div class="service-content">
               <h3>Ocean &amp; Sea Freight</h3>
-              <p>
-                Coordinate sea freight options for commercial goods,
-                personal effects and larger consignments, subject to route
-                availability and partner confirmation.
-              </p>
+              <p>Coordinate sea freight options for commercial goods, personal effects and larger consignments, subject to route availability and partner confirmation.</p>
             </div>
           </article>
 
           <article class="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&auto=format&fit=crop&q=80"
-              alt="Freight truck transporting cargo"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&auto=format&fit=crop&q=80" alt="Freight truck transporting goods" loading="lazy">
             <div class="service-content">
               <h3>Container &amp; Cargo Handling</h3>
-              <p>
-                Arrange appropriate cargo handling and container-related
-                services through suitable logistics partners where available.
-              </p>
+              <p>Arrange appropriate cargo handling and container-related services through suitable logistics partners where available.</p>
             </div>
           </article>
 
           <article class="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&auto=format&fit=crop&q=80"
-              alt="Heavy goods vehicle on a road"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&auto=format&fit=crop&q=80" alt="Heavy goods vehicle on a road" loading="lazy">
             <div class="service-content">
               <h3>Road Transport</h3>
-              <p>
-                Coordinate road transport options for collections,
-                domestic movements and cross-border freight where suitable
-                providers are available.
-              </p>
+              <p>Coordinate road transport for collections, domestic movements and cross-border freight where suitable providers are available.</p>
             </div>
           </article>
 
           <article class="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=80"
-              alt="Goods organised inside a warehouse"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=80" alt="Goods arranged inside a warehouse" loading="lazy">
             <div class="service-content">
               <h3>Warehousing &amp; Storage</h3>
-              <p>
-                Explore short-term or longer-term storage arrangements
-                through third-party facilities, subject to availability,
-                handling requirements and agreed charges.
-              </p>
+              <p>Explore short-term or longer-term storage through third-party facilities, subject to availability, handling requirements and agreed charges.</p>
             </div>
           </article>
 
           <article class="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800&auto=format&fit=crop&q=80"
-              alt="Parcels prepared for delivery"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800&auto=format&fit=crop&q=80" alt="Parcels prepared for delivery" loading="lazy">
             <div class="service-content">
               <h3>Last-Mile Delivery</h3>
-              <p>
-                Coordinate final delivery arrangements to homes,
-                businesses or other agreed destinations through available
-                delivery partners.
-              </p>
+              <p>Coordinate final delivery to homes, businesses or other agreed destinations through available delivery partners.</p>
             </div>
           </article>
 
           <article class="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1566139884669-9c3c9b6e1c2e?w=800&auto=format&fit=crop&q=80"
-              alt="Cargo being prepared for international transport"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&auto=format&fit=crop&q=80" alt="International cargo and freight containers" loading="lazy">
             <div class="service-content">
               <h3>Shipment Coordination</h3>
-              <p>
-                Get help coordinating shipment requirements, service
-                options, quotations, documentation and communication
-                with relevant logistics providers.
-              </p>
+              <p>Get help coordinating shipment requirements, quotations, documentation and communication with relevant logistics providers.</p>
             </div>
           </article>
 
@@ -1303,7 +1126,7 @@
       </div>
     </section>
 
-    <!-- How Solvanta Logistics Works -->
+    <!-- How we work -->
     <section class="section solvanta-trust" id="how-we-work">
       <div class="container">
         <div class="section-heading">
@@ -1322,40 +1145,25 @@
           <article class="trust-card">
             <span class="trust-number">01</span>
             <h3>Understand Your Needs</h3>
-            <p>
-              Tell us what you need to move, where it is starting from,
-              its destination, and any special handling requirements.
-            </p>
+            <p>Tell us what you need to move, its origin and destination, and any special handling requirements.</p>
           </article>
 
           <article class="trust-card">
             <span class="trust-number">02</span>
             <h3>Coordinate the Service</h3>
-            <p>
-              We work to identify suitable freight, transport or storage
-              arrangements through logistics partners, depending on your
-              cargo and route.
-            </p>
+            <p>We work to identify suitable freight, transport or storage arrangements through logistics partners.</p>
           </article>
 
           <article class="trust-card">
             <span class="trust-number">03</span>
             <h3>Confirm the Details</h3>
-            <p>
-              Before you proceed, we aim to confirm the price, service
-              scope, collection and delivery arrangements, and estimated
-              transit information.
-            </p>
+            <p>Before you proceed, we aim to confirm pricing, service scope, collection and delivery arrangements, and estimated transit information.</p>
           </article>
 
           <article class="trust-card">
             <span class="trust-number">04</span>
             <h3>Keep Communication Clear</h3>
-            <p>
-              We aim to communicate relevant updates received from our
-              logistics partners and explain the options available if
-              arrangements change.
-            </p>
+            <p>We aim to communicate relevant updates received from our logistics partners and explain available options if arrangements change.</p>
           </article>
 
         </div>
@@ -1366,7 +1174,7 @@
             Solvanta Logistics coordinates shipments through logistics
             partners. Routes, services, costs and transit estimates depend
             on the shipment and partner confirmation. We aim to explain
-            the arrangements clearly before you commit to a booking.
+            arrangements clearly before you commit to a booking.
           </p>
         </div>
 
@@ -1376,7 +1184,7 @@
       </div>
     </section>
 
-    <!-- Image showcase -->
+    <!-- Visual showcase -->
     <section class="section showcase" id="operations">
       <div class="container">
         <div class="section-heading">
@@ -1390,331 +1198,255 @@
 
         <div class="showcase-grid">
           <div class="showcase-item">
-            <img
-              src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1000&auto=format&fit=crop&q=80"
-              alt="International shipping containers at a port"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1000&auto=format&fit=crop&q=80" alt="International shipping containers at a port" loading="lazy">
             <span>International Freight</span>
           </div>
 
           <div class="showcase-item">
-            <img
-              src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=800&auto=format&fit=crop&q=80"
-              alt="Freight ship and cargo containers"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=800&auto=format&fit=crop&q=80" alt="Freight ship and cargo containers" loading="lazy">
             <span>Sea Transport</span>
           </div>
 
           <div class="showcase-item">
-            <img
-              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=80"
-              alt="Warehouse logistics operations"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=80" alt="Warehouse logistics operations" loading="lazy">
             <span>Storage &amp; Handling</span>
           </div>
 
           <div class="showcase-item">
-            <img
-              src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&auto=format&fit=crop&q=80"
-              alt="Road freight transport"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&auto=format&fit=crop&q=80" alt="Road freight transport" loading="lazy">
             <span>Road Freight</span>
           </div>
 
           <div class="showcase-item">
-            <img
-              src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800&auto=format&fit=crop&q=80"
-              alt="Packages ready for delivery"
-              loading="lazy">
+            <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800&auto=format&fit=crop&q=80" alt="Packages ready for delivery" loading="lazy">
             <span>Delivery Coordination</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Shipment tracking demo -->
+    <!-- Shipment tracking demonstration -->
     <section class="section tracking" id="tracking">
       <div class="container">
         <div class="section-heading">
           <div class="eyebrow">Shipment Enquiries</div>
           <h2>Track Your Shipment</h2>
-          <p>
-            Have a shipment reference? Enter it below to prepare an enquiry
-            with our team.
-          </p>
+          <p>Enter your shipment reference to prepare an enquiry with our team.</p>
         </div>
 
         <div class="tracking-box">
           <form id="trackingForm">
             <label for="trackingNumber">Shipment or Tracking Reference</label>
-
             <div class="tracking-form-row">
-              <input
-                type="text"
-                id="trackingNumber"
-                name="trackingNumber"
-                placeholder="Enter your shipment reference"
-                autocomplete="off"
-                required>
-
+              <input type="text" id="trackingNumber" name="trackingNumber" placeholder="Enter your shipment reference" autocomplete="off" required>
               <button class="btn" type="submit">Submit Enquiry</button>
             </div>
           </form>
 
           <div class="tracking-notice">
-            <strong>Important:</strong> Online carrier tracking is not
-            currently connected to this form. Submitting a reference does
-            not retrieve live shipment status or confirm that a shipment
-            exists. Use the contact details below to request an update.
+            <strong>Important:</strong> This form is not connected to live
+            carrier tracking. Submitting a reference does not retrieve live
+            shipment status or confirm that a shipment exists. Contact our
+            team to request an update.
           </div>
 
-          <div
-            class="tracking-result"
-            id="trackingResult"
-            role="status"
-            aria-live="polite"
-            hidden>
-          </div>
+          <div class="tracking-result" id="trackingResult" role="status" aria-live="polite" hidden></div>
         </div>
       </div>
     </section>
 
-    <!-- Policies -->
+    <!-- Collapsible policies -->
     <section class="section solvanta-policies" id="policies">
       <div class="container">
 
         <div class="section-heading">
           <div class="eyebrow">Customer Information</div>
-          <h2>Shipping, Refund &amp; Cancellation Policies</h2>
+          <h2>Our Shipping Policies</h2>
           <p>
-            We aim to make shipping arrangements clear and straightforward.
-            Please review these policies before confirming a shipment.
-            Your booking confirmation and any applicable laws also apply.
+            We believe in clear terms and transparent shipping arrangements.
+            Open the section below to review our payment, cancellation,
+            refund and insurance policies.
           </p>
         </div>
 
-        <div class="policy-grid">
+        <div class="policy-dropdown">
+          <details class="policy-details">
+            <summary>
+              <span>
+                <strong>Shipping, Refund &amp; Cancellation Policies</strong>
+                <small>Payment terms, cancellations, refunds and fragile goods insurance</small>
+              </span>
+              <span class="policy-chevron" aria-hidden="true">+</span>
+            </summary>
 
-          <article class="policy-card">
-            <h3>1. Payment Before Shipment</h3>
-            <p>
-              <strong>Full payment of the agreed shipment charges must be
-              received and confirmed before the shipment is dispatched.</strong>
-              Unless a separate written agreement expressly states otherwise,
-              we do not dispatch shipments on a payment-later basis.
-            </p>
-            <ul>
-              <li>A quotation should be accepted and the applicable charges
-              confirmed before the booking proceeds.</li>
-              <li>Dispatch is subject to payment confirmation and the
-              arrangements agreed with the relevant logistics partner.</li>
-              <li>Additional charges, such as customs duties, taxes,
-              inspections, storage or handling fees, will be explained
-              where known and allocated according to the booking terms.</li>
-              <li>Payment does not guarantee a specific delivery date
-              unless that commitment has been expressly confirmed in writing.</li>
-            </ul>
-          </article>
+            <div class="policy-dropdown-content">
 
-          <article class="policy-card">
-            <h3>2. Customer Cancellation</h3>
-            <p>
-              Customers should submit cancellation requests in writing
-              as soon as possible using the contact details on this website.
-              Cancellation options depend on the stage of the shipment.
-            </p>
-            <ul>
-              <li>Before a booking is confirmed or costs are committed,
-              payments will be reviewed for a refund, subject to applicable
-              law and the circumstances.</li>
-              <li>After confirmation, reasonable costs already incurred
-              or third-party charges that cannot be recovered may be
-              deducted where permitted by law and the agreed terms.</li>
-              <li>Once goods have been collected, dispatched or handed
-              over to a carrier, cancellation may not be possible.</li>
-              <li>Return, redirection, storage, collection and handling
-              charges may apply if the customer requests a change after
-              arrangements have begun.</li>
-              <li>We will explain known charges and available options
-              before proceeding where reasonably possible.</li>
-            </ul>
-          </article>
+              <article class="policy-card">
+                <h3>1. Payment Before Shipment</h3>
+                <p>
+                  <strong>Full payment of the agreed shipment charges must
+                  be received and confirmed before dispatch.</strong>
+                  Unless a separate written agreement expressly states
+                  otherwise, shipments will not be dispatched on a
+                  payment-later basis.
+                </p>
+                <ul>
+                  <li>Prices and service arrangements should be confirmed before booking.</li>
+                  <li>Additional charges, including customs duties, taxes, storage or handling fees, are allocated according to the agreed booking terms.</li>
+                  <li>Payment does not guarantee a specific delivery date unless confirmed in writing.</li>
+                </ul>
+              </article>
 
-          <article class="policy-card">
-            <h3>3. Refund Policy</h3>
-            <p>
-              Refund requests are assessed individually, taking account
-              of the service booked, shipment stage, costs incurred,
-              applicable partner terms and legal consumer rights.
-            </p>
-            <ul>
-              <li>Approved refunds will normally be returned through the
-              original payment method where practicable.</li>
-              <li>We aim to process approved refunds within 5–10 business
-              days. Banks and payment providers may take additional time
-              to make the funds available.</li>
-              <li>Charges for services already performed and third-party
-              costs that cannot be recovered may be excluded where lawful
-              and consistent with the agreed terms.</li>
-              <li>If the agreed service cannot be provided, we will
-              review the circumstances and explain any available refund,
-              remedy or alternative arrangement under the booking terms
-              and applicable law.</li>
-              <li>Nothing in this policy removes rights to a refund or
-              other remedy that cannot legally be excluded.</li>
-            </ul>
-          </article>
+              <article class="policy-card">
+                <h3>2. Customer Cancellation</h3>
+                <p>
+                  Cancellation requests should be submitted in writing
+                  as soon as possible. Available options depend on the
+                  stage of the shipment.
+                </p>
+                <ul>
+                  <li>Before a booking is confirmed or costs are committed, payments will be reviewed for a refund, subject to applicable law.</li>
+                  <li>Costs already incurred or non-recoverable third-party charges may be deducted where lawful and consistent with the agreed terms.</li>
+                  <li>Once goods have been collected, dispatched or handed over to a carrier, cancellation may no longer be possible.</li>
+                  <li>Return, redirection, storage or handling charges may apply to changes requested after arrangements have begun.</li>
+                </ul>
+              </article>
 
-          <article class="policy-card">
-            <h3>4. Delivery Times and Delays</h3>
-            <p>
-              Transit times are estimates unless a specific delivery
-              commitment has been confirmed in writing. Delays may arise
-              from customs inspections, adverse weather, port congestion,
-              carrier schedules, security checks or other circumstances
-              outside our reasonable control.
-            </p>
-            <p>
-              We aim to communicate material updates received from
-              relevant logistics partners. A delay does not automatically
-              qualify for a refund; requests will be considered under
-              the agreed service terms and applicable law.
-            </p>
-          </article>
+              <article class="policy-card">
+                <h3>3. Refund Policy</h3>
+                <p>
+                  Refund requests are assessed individually, taking account
+                  of the service booked, shipment stage, costs incurred,
+                  partner terms and applicable consumer rights.
+                </p>
+                <ul>
+                  <li>Approved refunds will normally be returned through the original payment method where practicable.</li>
+                  <li>We aim to process approved refunds within 5–10 business days. Banks or payment providers may take additional time.</li>
+                  <li>Charges for services already performed and costs that cannot be recovered may be excluded where lawful.</li>
+                  <li>If the agreed service cannot be provided, we will review the circumstances and explain any available refund, remedy or alternative.</li>
+                  <li>Nothing in this policy removes rights that cannot legally be excluded.</li>
+                </ul>
+              </article>
 
-          <article class="policy-card">
-            <h3>5. Fragile, Valuable and Special-Care Goods</h3>
-            <p>
-              <strong>Customers are strongly advised to arrange suitable
-              transit insurance for fragile, valuable, delicate or
-              easily damaged goods before shipment.</strong>
-            </p>
-            <ul>
-              <li>Examples include glassware, artwork, antiques, musical
-              instruments, electronics and delicate equipment.</li>
-              <li>Customers should accurately declare the nature and value
-              of goods and use suitable protective packaging.</li>
-              <li>Insurance is not automatically included unless expressly
-              confirmed in writing.</li>
-              <li>Insurance cover, exclusions, excesses, limits and claims
-              requirements depend on the insurer and policy. Customers
-              should review the policy carefully.</li>
-              <li>If insurance is requested, obtain written confirmation
-              of whether cover has been arranged, its insured value and
-              its relevant terms before dispatch.</li>
-            </ul>
-          </article>
+              <article class="policy-card">
+                <h3>4. Delivery Times and Delays</h3>
+                <p>
+                  Transit times are estimates unless a specific delivery
+                  commitment has been confirmed in writing. Delays may
+                  arise from customs inspections, weather, port congestion,
+                  carrier schedules or other circumstances outside our
+                  reasonable control.
+                </p>
+                <p>
+                  We aim to communicate material updates received from
+                  our logistics partners. A delay does not automatically
+                  qualify for a refund; requests will be assessed under
+                  the agreed terms and applicable law.
+                </p>
+              </article>
 
-          <article class="policy-card">
-            <h3>6. Damage, Loss and Claims</h3>
-            <p>
-              Customers should inspect delivered goods promptly and
-              report visible damage, missing items or suspected loss
-              as soon as possible.
-            </p>
-            <ul>
-              <li>Contact us with the shipment reference, photographs,
-              a description of the issue and supporting documents.</li>
-              <li>Keep the original packaging and damaged items where
-              possible, as they may be required for an assessment.</li>
-              <li>Carrier and insurer claim deadlines may be short.
-              Follow the applicable instructions and submit evidence
-              within the required time.</li>
-              <li>Claims depend on the relevant contract, evidence,
-              insurance terms where applicable and governing law.</li>
-              <li>Nothing in this policy excludes liability or rights
-              that cannot legally be excluded.</li>
-            </ul>
-          </article>
+              <article class="policy-card">
+                <h3>5. Fragile and Valuable Goods Insurance</h3>
+                <p>
+                  <strong>Customers are strongly advised to obtain suitable
+                  transit insurance for fragile, valuable, delicate or
+                  easily damaged goods before shipment.</strong>
+                </p>
+                <ul>
+                  <li>Examples include glassware, artwork, antiques, musical instruments, electronics and delicate equipment.</li>
+                  <li>Customers should accurately declare the nature and value of goods and use suitable protective packaging.</li>
+                  <li>Insurance is not automatically included unless confirmed in writing.</li>
+                  <li>Coverage, exclusions, excesses and claim requirements depend on the insurer and policy.</li>
+                  <li>Obtain written confirmation of any insurance arranged, including the insured value and relevant terms.</li>
+                </ul>
+              </article>
 
-          <article class="policy-card">
-            <h3>7. Customs, Duties and Restricted Goods</h3>
-            <p>
-              International shipments may be subject to customs duties,
-              import taxes, inspections, permits and destination-country
-              requirements. Responsibility for these charges will be
-              determined by the quotation and booking terms.
-            </p>
-            <p>
-              Customers must provide accurate shipment descriptions,
-              declared values and required documents. Prohibited or
-              restricted goods must not be tendered without the necessary
-              authorisation. Delays, rejection, storage or return costs
-              may arise if legal or documentation requirements are not met.
-            </p>
-          </article>
+              <article class="policy-card">
+                <h3>6. Damage, Loss and Claims</h3>
+                <p>
+                  Customers should inspect delivered goods promptly and
+                  report visible damage, missing items or suspected loss
+                  as soon as possible.
+                </p>
+                <ul>
+                  <li>Provide your shipment reference, photographs and a description of the issue.</li>
+                  <li>Keep damaged items and original packaging where possible.</li>
+                  <li>Carrier and insurer claim deadlines may be short. Follow the relevant instructions and submit evidence promptly.</li>
+                  <li>Claims are subject to applicable contracts, insurance terms where relevant, evidence requirements and governing law.</li>
+                </ul>
+              </article>
 
-          <article class="policy-card">
-            <h3>8. Logistics Partners and Service Scope</h3>
-            <p>
-              Solvanta Logistics coordinates shipments through logistics
-              partners. Transport providers, routes, handling arrangements
-              and available services depend on the shipment and partner
-              confirmation.
-            </p>
-            <p>
-              The quotation and booking confirmation should identify the
-              agreed service and relevant terms. Responsibility for
-              transport, loss, damage and delays depends on the role of
-              each provider, the applicable contract and governing law.
-            </p>
-          </article>
+              <article class="policy-card">
+                <h3>7. Customs and Restricted Goods</h3>
+                <p>
+                  International shipments may be subject to customs duties,
+                  taxes, inspections, permits and destination-country rules.
+                  Responsibility for applicable charges is determined by
+                  the quotation and booking terms.
+                </p>
+                <p>
+                  Customers must provide accurate descriptions, declared
+                  values and required documents. Prohibited or restricted
+                  goods must not be shipped without the necessary
+                  authorisation.
+                </p>
+              </article>
 
-          <article class="policy-card">
-            <h3>9. Changes to a Shipment</h3>
-            <p>
-              Requests to change the delivery address, destination,
-              shipment contents or service after booking should be made
-              in writing as soon as possible.
-            </p>
-            <p>
-              Changes are subject to operational feasibility and partner
-              approval. Additional transport, storage, customs or
-              administration charges may apply. We will communicate
-              known charges before proceeding where reasonably possible.
-            </p>
-          </article>
+              <article class="policy-card">
+                <h3>8. Logistics Partners and Service Scope</h3>
+                <p>
+                  Solvanta Logistics coordinates shipments through logistics
+                  partners. Providers, routes, handling arrangements and
+                  available services depend on the shipment and partner
+                  confirmation.
+                </p>
+                <p>
+                  The booking confirmation should identify the agreed
+                  service and relevant terms. Responsibility for transport,
+                  loss, damage and delays depends on the applicable contract,
+                  each provider's role and governing law.
+                </p>
+              </article>
 
-          <article class="policy-card">
-            <h3>10. Policy Questions and Disputes</h3>
-            <p>
-              If you have a question about a quotation, cancellation,
-              refund or shipment, please contact us with your booking
-              reference and a clear explanation of your concern.
-            </p>
-            <p>
-              We will review the available information and aim to
-              resolve concerns fairly. These policies are subject to
-              applicable laws and do not override mandatory consumer
-              protections or other rights that cannot lawfully be waived.
-            </p>
-          </article>
+              <article class="policy-card">
+                <h3>9. Changes to a Shipment</h3>
+                <p>
+                  Requests to change a destination, delivery address,
+                  shipment contents or service should be made in writing
+                  as soon as possible. Changes are subject to operational
+                  feasibility and partner approval. Additional charges
+                  may apply.
+                </p>
+              </article>
 
+              <article class="policy-card">
+                <h3>10. Questions and Complaints</h3>
+                <p>
+                  For questions about a quotation, cancellation, refund
+                  or shipment, contact us with your booking reference and
+                  a description of your concern. We aim to review concerns
+                  fairly and explain the next steps.
+                </p>
+                <p>
+                  These policies do not override mandatory legal protections
+                  or rights that cannot lawfully be waived.
+                </p>
+              </article>
+
+              <div class="policy-note">
+                <strong>Need help with a shipment or refund?</strong>
+                <p>
+                  Email:
+                  <a href="mailto:info@solvantalogistics.com">info@solvantalogistics.com</a>
+                  <br>
+                  Phone:
+                  <a href="tel:+19713615379">+1 971 361 5379</a>
+                </p>
+              </div>
+
+            </div>
+          </details>
         </div>
-
-        <div class="policy-note">
-          <strong>Need help with a shipment or refund?</strong>
-          <p>
-            Contact Solvanta Logistics and include your shipment reference
-            if you have one.
-          </p>
-          <p>
-            Email:
-            <a href="mailto:info@solvantalogistics.com">
-              info@solvantalogistics.com
-            </a>
-            <br>
-            Phone:
-            <a href="tel:+19713615379">+1 971 361 5379</a>
-          </p>
-        </div>
-
-        <p class="policy-last-updated">
-          These policies should be reviewed periodically and checked
-          against the laws and contractual requirements applicable to
-          the business and each shipment.
-        </p>
-
       </div>
     </section>
 
@@ -1725,9 +1457,9 @@
           <div class="eyebrow">Get in Touch</div>
           <h2>Let's Discuss Your Shipment</h2>
           <p>
-            Tell us what you need to move, where it is going and any
-            special requirements. We will review your enquiry and
-            respond about the available options.
+            Tell us what you need to move, where it is going and any special
+            requirements. We will review your enquiry and respond about
+            the available options.
           </p>
         </div>
 
@@ -1745,11 +1477,7 @@
               <span class="contact-item-icon" aria-hidden="true">✉</span>
               <div>
                 <h4>Email</h4>
-                <p>
-                  <a href="mailto:info@solvantalogistics.com">
-                    info@solvantalogistics.com
-                  </a>
-                </p>
+                <p><a href="mailto:info@solvantalogistics.com">info@solvantalogistics.com</a></p>
               </div>
             </div>
 
@@ -1757,9 +1485,7 @@
               <span class="contact-item-icon" aria-hidden="true">☎</span>
               <div>
                 <h4>Phone</h4>
-                <p>
-                  <a href="tel:+19713615379">+1 971 361 5379</a>
-                </p>
+                <p><a href="tel:+19713615379">+1 971 361 5379</a></p>
               </div>
             </div>
 
@@ -1784,112 +1510,75 @@
               <p>
                 Request a written quotation and confirm the service,
                 total charges, payment requirements, estimated transit
-                time and any insurance arrangements before your shipment
-                is dispatched.
+                time and any insurance arrangements before dispatch.
               </p>
             </div>
           </div>
 
-          <div>
-            <form
-              class="contact-form"
-              id="contactForm"
-              action="https://formspree.io/f/xgaobqbb"
-              method="POST">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xgaobqbb" method="POST">
+            <h3>Request a Shipping Quote</h3>
+            <p class="form-intro">Complete the form below and we will review your enquiry.</p>
 
-              <h3>Request a Shipping Quote</h3>
-              <p class="form-intro">
-                Complete the form below and we will review your enquiry.
-              </p>
+            <input type="hidden" name="_subject" value="New Shipping Enquiry - Solvanta Logistics">
 
-              <input
-                type="hidden"
-                name="_subject"
-                value="New Shipping Enquiry - Solvanta Logistics">
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Full Name *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    autocomplete="name"
-                    required>
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Email Address *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    autocomplete="email"
-                    required>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="company">Company (optional)</label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    autocomplete="organization">
-                </div>
-
-                <div class="form-group">
-                  <label for="service">Service Required *</label>
-                  <select id="service" name="service" required>
-                    <option value="">Select a service</option>
-                    <option value="Ocean and Sea Freight">Ocean &amp; Sea Freight</option>
-                    <option value="Container and Cargo Handling">Container &amp; Cargo Handling</option>
-                    <option value="Road Transport">Road Transport</option>
-                    <option value="Warehousing and Storage">Warehousing &amp; Storage</option>
-                    <option value="Last-Mile Delivery">Last-Mile Delivery</option>
-                    <option value="Shipment Coordination">Shipment Coordination</option>
-                    <option value="Other">Other / Not Sure</option>
-                  </select>
-                </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
               </div>
 
               <div class="form-group">
-                <label for="origin">Origin and Destination (optional)</label>
-                <input
-                  type="text"
-                  id="origin"
-                  name="origin_destination"
-                  placeholder="e.g. Portland, USA to London, UK">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="company">Company (optional)</label>
+                <input type="text" id="company" name="company" autocomplete="organization">
               </div>
 
               <div class="form-group">
-                <label for="message">Shipment Details *</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Describe the goods, approximate weight or dimensions, destination, preferred shipping method and any fragile-item or insurance requirements."
-                  required></textarea>
+                <label for="service">Service Required *</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="Ocean and Sea Freight">Ocean &amp; Sea Freight</option>
+                  <option value="Container and Cargo Handling">Container &amp; Cargo Handling</option>
+                  <option value="Road Transport">Road Transport</option>
+                  <option value="Warehousing and Storage">Warehousing &amp; Storage</option>
+                  <option value="Last-Mile Delivery">Last-Mile Delivery</option>
+                  <option value="Shipment Coordination">Shipment Coordination</option>
+                  <option value="Other">Other / Not Sure</option>
+                </select>
               </div>
+            </div>
 
-              <p class="form-privacy">
-                Please do not submit payment card details or other
-                sensitive financial information through this form.
-                By submitting, you are asking us to respond to your enquiry.
-                See our <a href="#policies">shipping policies</a>.
-              </p>
+            <div class="form-group">
+              <label for="origin">Origin and Destination (optional)</label>
+              <input type="text" id="origin" name="origin_destination" placeholder="e.g. Portland, USA to London, UK">
+            </div>
 
-              <button class="btn btn-primary" type="submit">
-                Send Shipping Enquiry →
-              </button>
+            <div class="form-group">
+              <label for="message">Shipment Details *</label>
+              <textarea id="message" name="message" placeholder="Describe the goods, approximate weight or dimensions, destination, preferred shipping method and any fragile-item or insurance requirements." required></textarea>
+            </div>
 
-              <p class="form-intro" style="margin: 14px 0 0;">
-                Please note: submitting an enquiry is not a confirmed
-                booking. Service availability, pricing and arrangements
-                must be confirmed separately.
-              </p>
-            </form>
-          </div>
+            <p class="form-privacy">
+              Please do not submit payment card details or sensitive
+              financial information through this form. By submitting,
+              you are asking us to respond to your enquiry.
+              See our <a href="#policies">shipping policies</a>.
+            </p>
+
+            <button class="btn btn-primary" type="submit">Send Shipping Enquiry →</button>
+
+            <p class="form-intro" style="margin:14px 0 0;">
+              Submitting an enquiry is not a confirmed booking.
+              Service availability, pricing and arrangements must be
+              confirmed separately.
+            </p>
+          </form>
 
         </div>
       </div>
@@ -1900,7 +1589,6 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-
       <div class="footer-grid">
 
         <div class="footer-brand">
@@ -1911,11 +1599,10 @@
               <span class="brand-tagline">Your World. Our Network.</span>
             </span>
           </a>
-
           <p>
             Coordinating international shipping and logistics solutions
-            through a network of service partners, with a focus on clear
-            communication and customer support.
+            through service partners, with a focus on clear communication
+            and customer support.
           </p>
         </div>
 
@@ -1944,13 +1631,9 @@
       </div>
 
       <div class="footer-bottom">
-        <p>
-          &copy; <span id="currentYear">2026</span> Solvanta Logistics.
-          All rights reserved.
-        </p>
+        <p>&copy; <span id="currentYear">2026</span> Solvanta Logistics. All rights reserved.</p>
         <p>Your World. Our Network.</p>
       </div>
-
     </div>
   </footer>
 
@@ -1961,18 +1644,17 @@
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Contact Solvanta Logistics on WhatsApp">
-
     <svg viewBox="0 0 32 32" aria-hidden="true">
       <path d="M16.02 3C8.87 3 3.05 8.77 3.05 15.87c0 2.28.6 4.5 1.74 6.46L3 29l6.89-1.8a13.1 13.1 0 0 0 6.13 1.52h.01c7.14 0 12.96-5.77 12.97-12.87A12.8 12.8 0 0 0 25.2 6.7 12.9 12.9 0 0 0 16.02 3zm0 23.55h-.01a10.9 10.9 0 0 1-5.55-1.51l-.4-.24-4.09 1.07 1.09-3.96-.26-.41a10.6 10.6 0 0 1-1.66-5.63c0-6.02 4.91-10.92 10.95-10.92 2.92 0 5.67 1.13 7.73 3.18a10.8 10.8 0 0 1 3.2 7.72c0 6.02-4.92 10.91-11 10.91zm6.02-8.17c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.73.16-.22.32-.84 1.06-1.03 1.27-.19.22-.38.24-.71.08-.33-.16-1.39-.51-2.65-1.63-.98-.86-1.64-1.92-1.83-2.24-.19-.32-.02-.5.14-.66.15-.14.33-.38.49-.57.16-.19.22-.32.33-.54.11-.21.06-.4-.03-.56-.08-.16-.73-1.74-1-2.38-.26-.62-.53-.54-.73-.55h-.62c-.22 0-.57.08-.87.4-.3.32-1.14 1.1-1.14 2.68s1.17 3.11 1.33 3.32c.16.22 2.3 3.5 5.58 4.9.78.33 1.39.53 1.86.68.78.24 1.49.21 2.05.13.62-.09 1.93-.79 2.2-1.55.27-.76.27-1.41.19-1.55-.08-.14-.3-.22-.62-.38z"/>
     </svg>
   </a>
 
   <script>
-    // Automatically update the copyright year.
+    // Current copyright year
     document.getElementById("currentYear").textContent =
       new Date().getFullYear();
 
-    // Mobile navigation menu.
+    // Mobile navigation
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
 
@@ -1987,7 +1669,6 @@
       menuToggle.textContent = isOpen ? "✕" : "☰";
     });
 
-    // Close the mobile menu after a navigation link is selected.
     navLinks.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
         navLinks.classList.remove("is-open");
@@ -1997,8 +1678,7 @@
       });
     });
 
-    // Demonstration tracking form.
-    // This does not connect to a live carrier tracking system.
+    // Demo tracking form: this does not retrieve live carrier data.
     const trackingForm = document.getElementById("trackingForm");
     const trackingNumberInput = document.getElementById("trackingNumber");
     const trackingResult = document.getElementById("trackingResult");
@@ -2006,9 +1686,9 @@
     trackingForm.addEventListener("submit", function (event) {
       event.preventDefault();
 
-      const trackingNumber = trackingNumberInput.value.trim();
+      const reference = trackingNumberInput.value.trim();
 
-      if (!trackingNumber) {
+      if (!reference) {
         trackingResult.hidden = false;
         trackingResult.textContent =
           "Please enter a shipment or tracking reference.";
@@ -2017,10 +1697,9 @@
 
       trackingResult.hidden = false;
       trackingResult.textContent =
-        "Enquiry reference entered: " + trackingNumber +
-        ". This website does not yet provide live carrier tracking. " +
-        "Please contact info@solvantalogistics.com or call +1 971 361 5379 " +
-        "to request a shipment update.";
+        "Reference entered: " + reference +
+        ". Live carrier tracking is not connected yet. Please email " +
+        "info@solvantalogistics.com or call +1 971 361 5379 to request an update.";
     });
   </script>
 
