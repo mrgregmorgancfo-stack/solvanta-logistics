@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Solvanta Logistics - International shipping, warehousing, distribution and delivery solutions. Track your shipment and get in touch with our Oregon-based team.">
   <title>Solvanta Logistics | Your World. Our Network.</title>
+
   <style>
     :root {
       --navy: #0f2438;
@@ -16,14 +18,17 @@
       --text: #2c3e50;
       --gray: #6b7c8f;
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       color: var(--text);
       line-height: 1.6;
       background: var(--white);
     }
+
     img { max-width: 100%; height: auto; display: block; }
     a { text-decoration: none; color: inherit; }
 
@@ -40,24 +45,30 @@
       z-index: 100;
       box-shadow: 0 2px 12px rgba(0,0,0,0.15);
     }
+
     .brand {
       font-size: 1.4rem;
       font-weight: 800;
       letter-spacing: 0.5px;
     }
+
     .brand span { color: var(--gold); }
+
     nav {
       display: flex;
       gap: 28px;
       align-items: center;
     }
+
     nav a {
       color: rgba(255,255,255,0.9);
       font-size: 0.95rem;
       font-weight: 500;
       transition: color 0.2s;
     }
+
     nav a:hover { color: var(--gold); }
+
     .nav-cta {
       background: var(--gold);
       color: var(--navy) !important;
@@ -65,6 +76,7 @@
       border-radius: 4px;
       font-weight: 700;
     }
+
     .nav-cta:hover { background: var(--gold-hover); }
 
     /* Hero */
@@ -75,6 +87,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero::before {
       content: '';
       position: absolute;
@@ -82,10 +95,12 @@
       background: url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600&q=80') center/cover no-repeat;
       opacity: 0.18;
     }
+
     .hero-inner {
       position: relative;
       max-width: 680px;
     }
+
     .eyebrow {
       color: var(--gold);
       font-weight: 700;
@@ -94,18 +109,21 @@
       font-size: 0.85rem;
       margin-bottom: 14px;
     }
+
     .hero h1 {
       font-size: clamp(2.6rem, 6vw, 3.8rem);
       line-height: 1.15;
       margin-bottom: 18px;
       font-weight: 800;
     }
+
     .hero p {
       font-size: 1.15rem;
       opacity: 0.92;
       max-width: 540px;
       margin-bottom: 32px;
     }
+
     .btn {
       display: inline-block;
       padding: 14px 26px;
@@ -116,37 +134,51 @@
       margin-right: 12px;
       margin-bottom: 10px;
     }
+
     .btn-primary {
       background: var(--gold);
       color: var(--navy);
     }
-    .btn-primary:hover { background: var(--gold-hover); transform: translateY(-1px); }
+
+    .btn-primary:hover {
+      background: var(--gold-hover);
+      transform: translateY(-1px);
+    }
+
     .btn-secondary {
       border: 2px solid rgba(255,255,255,0.7);
       color: white;
     }
-    .btn-secondary:hover { border-color: white; background: rgba(255,255,255,0.08); }
+
+    .btn-secondary:hover {
+      border-color: white;
+      background: rgba(255,255,255,0.08);
+    }
 
     /* Sections */
     section { padding: 80px 6%; }
+
     .section-heading {
       max-width: 620px;
       margin-bottom: 48px;
     }
+
     .section-heading h2 {
       color: var(--navy);
       font-size: clamp(1.8rem, 4vw, 2.4rem);
       margin-bottom: 12px;
       font-weight: 800;
     }
+
     .section-heading p { color: var(--gray); font-size: 1.05rem; }
 
-    /* Services with images */
+    /* Services */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 28px;
     }
+
     .service-card {
       background: white;
       border-radius: 10px;
@@ -154,47 +186,54 @@
       box-shadow: 0 6px 24px rgba(15,36,56,0.08);
       transition: transform 0.25s, box-shadow 0.25s;
     }
+
     .service-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 12px 32px rgba(15,36,56,0.12);
     }
+
     .service-card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
-    .service-card .content {
-      padding: 24px;
-    }
+
+    .service-card .content { padding: 24px; }
+
     .service-card h3 {
       color: var(--navy);
       font-size: 1.25rem;
       margin-bottom: 10px;
       font-weight: 700;
     }
+
     .service-card p { color: var(--gray); font-size: 0.97rem; }
 
-    /* Image showcase strip */
+    /* Image showcase */
     .showcase {
       background: var(--light);
       padding: 60px 6%;
     }
+
     .showcase-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 16px;
     }
+
     .showcase-item {
       border-radius: 8px;
       overflow: hidden;
       height: 180px;
       position: relative;
     }
+
     .showcase-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+
     .showcase-item span {
       position: absolute;
       bottom: 0;
@@ -208,9 +247,8 @@
     }
 
     /* Tracking */
-    .tracking {
-      background: var(--light);
-    }
+    .tracking { background: var(--light); }
+
     .tracking-panel {
       background: white;
       max-width: 560px;
@@ -218,12 +256,14 @@
       border-radius: 12px;
       box-shadow: 0 8px 30px rgba(15,36,56,0.08);
     }
+
     .tracking-panel label {
       display: block;
       font-weight: 600;
       margin-bottom: 8px;
       color: var(--navy);
     }
+
     .tracking-panel input {
       width: 100%;
       padding: 15px 16px;
@@ -233,10 +273,12 @@
       margin-bottom: 18px;
       transition: border-color 0.2s;
     }
+
     .tracking-panel input:focus {
       outline: none;
       border-color: var(--gold);
     }
+
     .tracking-panel button {
       width: 100%;
       padding: 15px;
@@ -249,7 +291,9 @@
       cursor: pointer;
       transition: background 0.2s;
     }
+
     .tracking-panel button:hover { background: var(--navy-light); }
+
     #tracking-message {
       margin-top: 18px;
       padding: 14px;
@@ -267,42 +311,76 @@
       gap: 48px;
       align-items: start;
     }
+
     .contact-info h3 {
       color: var(--navy);
       font-size: 1.3rem;
       margin-bottom: 20px;
     }
+
     .contact-item {
       display: flex;
       gap: 14px;
       margin-bottom: 22px;
       align-items: flex-start;
     }
+
     .contact-item strong {
       display: block;
       color: var(--navy);
       margin-bottom: 2px;
     }
-    .contact-item span, .contact-item a {
-      color: var(--gray);
-    }
+
+    .contact-item span,
+    .contact-item a { color: var(--gray); }
+
     .contact-item a:hover { color: var(--gold); }
+
     .contact-form {
       background: var(--light);
       padding: 32px;
       border-radius: 12px;
     }
+
+    .contact-form h3 {
+      margin-bottom: 18px;
+      color: var(--navy);
+    }
+
+    .contact-form label {
+      display: block;
+      color: var(--navy);
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
     .contact-form input,
-    .contact-form textarea {
+    .contact-form textarea,
+    .contact-form select {
+      display: block;
       width: 100%;
       padding: 13px 15px;
       border: 1.5px solid #d0d7e0;
       border-radius: 6px;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
       font-size: 1rem;
       font-family: inherit;
+      background: white;
+      color: var(--text);
     }
-    .contact-form textarea { height: 120px; resize: vertical; }
+
+    .contact-form textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus,
+    .contact-form select:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+
     .contact-form button {
       background: var(--gold);
       color: var(--navy);
@@ -313,7 +391,37 @@
       font-size: 1rem;
       cursor: pointer;
     }
+
     .contact-form button:hover { background: var(--gold-hover); }
+
+    /* WhatsApp button */
+    .whatsapp-button {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 9999;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: #ffffff;
+      padding: 14px 20px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .whatsapp-button:hover {
+      background: #128C7E;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .whatsapp-icon { font-size: 22px; line-height: 1; }
 
     /* Footer */
     footer {
@@ -322,8 +430,10 @@
       padding: 48px 6% 30px;
       text-align: center;
     }
+
     footer .brand { margin-bottom: 12px; font-size: 1.3rem; }
     footer p { margin-bottom: 8px; font-size: 0.95rem; }
+
     footer .copy {
       margin-top: 28px;
       padding-top: 20px;
@@ -334,14 +444,30 @@
 
     /* Responsive */
     @media (max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 14px; }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+
       nav { flex-wrap: wrap; gap: 16px; }
       .hero { padding: 70px 6% 80px; }
       .contact-grid { grid-template-columns: 1fr; gap: 36px; }
       .showcase-item { height: 160px; }
+      .contact-form { padding: 24px; }
+    }
+
+    @media (max-width: 480px) {
+      .whatsapp-button {
+        right: 14px;
+        bottom: 14px;
+        padding: 12px 16px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Header -->
@@ -366,21 +492,23 @@
     </div>
   </section>
 
-  <!-- Services with images -->
+  <!-- Services -->
   <section id="services">
     <div class="section-heading">
       <div class="eyebrow">What we offer</div>
       <h2>Complete logistics solutions</h2>
       <p>From ocean freight and container handling to road delivery and secure storage — we keep your goods moving.</p>
     </div>
+
     <div class="services-grid">
       <article class="service-card">
         <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=600&q=80" alt="Cargo ship at sea">
         <div class="content">
-          <h3>Ocean & Sea Freight</h3>
+          <h3>Ocean &amp; Sea Freight</h3>
           <p>International container shipping with reliable vessel schedules and full documentation support.</p>
         </div>
       </article>
+
       <article class="service-card">
         <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Shipping containers">
         <div class="content">
@@ -388,6 +516,7 @@
           <p>Efficient loading, unloading and management of full and less-than-container loads.</p>
         </div>
       </article>
+
       <article class="service-card">
         <img src="https://images.unsplash.com/photo-1601584115197-04ecc1da5d99?w=600&q=80" alt="Delivery truck on highway">
         <div class="content">
@@ -395,13 +524,15 @@
           <p>Trucks and vans for domestic distribution and last-mile delivery across the region.</p>
         </div>
       </article>
+
       <article class="service-card">
         <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80" alt="Warehouse storage facility">
         <div class="content">
-          <h3>Warehousing & Storage</h3>
+          <h3>Warehousing &amp; Storage</h3>
           <p>Secure storage facilities with inventory management and flexible short or long-term options.</p>
         </div>
       </article>
+
       <article class="service-card">
         <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=600&q=80" alt="Delivery staff loading packages">
         <div class="content">
@@ -409,6 +540,7 @@
           <p>Professional delivery teams ensuring packages reach customers safely and on time.</p>
         </div>
       </article>
+
       <article class="service-card">
         <img src="https://images.unsplash.com/photo-1586528116493-a029325540fa?w=600&q=80" alt="Logistics team at work">
         <div class="content">
@@ -425,6 +557,7 @@
       <div class="eyebrow">Our operations</div>
       <h2>From port to door</h2>
     </div>
+
     <div class="showcase-grid">
       <div class="showcase-item">
         <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=500&q=80" alt="Cargo ship">
@@ -460,13 +593,14 @@
       <h2>Track your shipment</h2>
       <p>Enter your tracking number below. Our team will provide the latest available update.</p>
     </div>
+
     <div class="tracking-panel">
       <form id="tracking-form">
         <label for="tracking-number">Tracking Number</label>
         <input type="text" id="tracking-number" name="tracking-number" placeholder="e.g. PVL-2026-001245" required>
         <button type="submit">Check Status</button>
       </form>
-      <div id="tracking-message"></div>
+      <div id="tracking-message" aria-live="polite"></div>
     </div>
   </section>
 
@@ -477,27 +611,32 @@
       <h2>Contact Solvanta Logistics</h2>
       <p>Ready to discuss storage, shipping or distribution? Reach out to our team in Oregon.</p>
     </div>
+
     <div class="contact-grid">
       <div class="contact-info">
         <h3>Contact Details</h3>
+
         <div class="contact-item">
           <div>
             <strong>Email</strong>
             <a href="mailto:info@solvantalogistics.com">info@solvantalogistics.com</a>
           </div>
         </div>
+
         <div class="contact-item">
           <div>
             <strong>Phone</strong>
             <a href="tel:+19713615379">+1 971 361 5379</a>
           </div>
         </div>
+
         <div class="contact-item">
           <div>
             <strong>Location</strong>
             <span>Oregon, USA</span>
           </div>
         </div>
+
         <div class="contact-item">
           <div>
             <strong>Business Hours</strong>
@@ -505,14 +644,66 @@
           </div>
         </div>
       </div>
+
+      <!-- Formspree contact form -->
       <div class="contact-form">
-        <h3 style="margin-bottom: 18px; color: var(--navy);">Send us a message</h3>
-        <form onsubmit="event.preventDefault(); alert('Thank you! Please email us directly at info@solvantalogistics.com for now.');">
-          <input type="text" placeholder="Your name" required>
-          <input type="email" placeholder="Your email" required>
-          <input type="text" placeholder="Subject">
-          <textarea placeholder="How can we help you?"></textarea>
-          <button type="submit">Send Message</button>
+        <h3>Send us a message</h3>
+
+        <form action="https://formspree.io/f/xgaobqbb" method="POST">
+          <label for="contact-name">Full Name</label>
+          <input
+            type="text"
+            id="contact-name"
+            name="name"
+            placeholder="Enter your full name"
+            autocomplete="name"
+            required
+          >
+
+          <label for="contact-email">Email Address</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="Enter your email address"
+            autocomplete="email"
+            required
+          >
+
+          <label for="contact-company">Company Name (Optional)</label>
+          <input
+            type="text"
+            id="contact-company"
+            name="company"
+            placeholder="Enter your company name"
+            autocomplete="organization"
+          >
+
+          <label for="contact-service">Service Required</label>
+          <select id="contact-service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="Warehousing and Storage">Warehousing and Storage</option>
+            <option value="Shipping Coordination">Shipping Coordination</option>
+            <option value="Distribution and Delivery">Distribution and Delivery</option>
+            <option value="International Logistics">International Logistics</option>
+            <option value="Other Enquiry">Other Enquiry</option>
+          </select>
+
+          <label for="contact-message">Your Message</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            placeholder="Tell us how we can help with your logistics needs"
+            required
+          ></textarea>
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Website Enquiry - Solvanta Logistics"
+          >
+
+          <button type="submit">Send Enquiry</button>
         </form>
       </div>
     </div>
@@ -528,74 +719,40 @@
     </div>
   </footer>
 
+  <!-- WhatsApp button -->
+  <a
+    href="https://wa.me/19713615379?text=Hello%20Solvanta%20Logistics%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services."
+    class="whatsapp-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Solvanta Logistics on WhatsApp"
+  >
+    <span class="whatsapp-icon" aria-hidden="true">☏</span>
+    Chat with us on WhatsApp
+  </a>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
     document.getElementById("tracking-form").addEventListener("submit", function(e) {
       e.preventDefault();
+
       const msg = document.getElementById("tracking-message");
       const number = document.getElementById("tracking-number").value.trim();
+
       msg.style.display = "block";
+
       if (number) {
-        msg.textContent = "Thank you. Tracking number \"" + number + "\" has been received. Please contact us at info@solvantalogistics.com or +1 971 361 5379 for the latest status update. Full online tracking will be activated soon.";
+        msg.textContent =
+          'Thank you. Tracking number "' + number +
+          '" has been received. Please contact us at ' +
+          'info@solvantalogistics.com or +1 971 361 5379 ' +
+          'for the latest status update. Full online tracking will be activated soon.';
       } else {
         msg.textContent = "Please enter a valid tracking number.";
       }
     });
   </script>
-  
-<!-- Solvanta Logistics WhatsApp Button -->
-<a
-  href="https://wa.me/19713615379?text=Hello%20Solvanta%20Logistics%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%20your%20services."
-  class="whatsapp-button"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Chat with Solvanta Logistics on WhatsApp"
->
-  <span class="whatsapp-icon">☏</span>
-  Chat with us on WhatsApp
-</a>
 
-<style>
-  .whatsapp-button {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 9999;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #25D366;
-    color: #ffffff;
-    padding: 14px 20px;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: background 0.2s ease, transform 0.2s ease;
-  }
-
-  .whatsapp-button:hover {
-    background: #128C7E;
-    color: #ffffff;
-    transform: translateY(-2px);
-  }
-
-  .whatsapp-icon {
-    font-size: 22px;
-    line-height: 1;
-  }
-
-  @media (max-width: 480px) {
-    .whatsapp-button {
-      right: 14px;
-      bottom: 14px;
-      padding: 12px 16px;
-      font-size: 14px;
-    }
-  }
-</style>
 </body>
-  </html>
+</html>
