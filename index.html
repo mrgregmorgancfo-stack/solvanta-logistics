@@ -6,6 +6,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Solvanta Logistics - International shipping, warehousing, distribution and delivery solutions. Track your shipment and get in touch with our Oregon-based team.">
   <title>Solvanta Logistics | Your World. Our Network.</title>
+  
+/* Solvanta Logistics — Trust and How We Work */
+.solvanta-trust {
+  padding: 80px 20px;
+  background: #f5f7fa;
+  color: #17243a;
+}
+
+.solvanta-trust .trust-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.solvanta-trust .trust-heading {
+  max-width: 720px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.solvanta-trust .trust-eyebrow {
+  color: #9a7728;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.solvanta-trust h2 {
+  color: var(--navy, #102442);
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.solvanta-trust .trust-intro {
+  color: #526074;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.solvanta-trust .trust-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.solvanta-trust .trust-card {
+  background: #ffffff;
+  padding: 28px 22px;
+  border: 1px solid #e3e8ef;
+  border-top: 3px solid var(--gold, #c9a34a);
+  border-radius: 10px;
+  box-shadow: 0 6px 22px rgba(16, 36, 66, 0.04);
+}
+
+.solvanta-trust .trust-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: #102442;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.solvanta-trust .trust-card h3 {
+  color: var(--navy, #102442);
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.solvanta-trust .trust-card p {
+  color: #596579;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.solvanta-trust .trust-note {
+  margin-top: 30px;
+  padding: 22px 24px;
+  border-left: 4px solid var(--gold, #c9a34a);
+  border-radius: 5px;
+  background: #ffffff;
+  color: #46546a;
+  line-height: 1.8;
+}
+
+.solvanta-trust .trust-note strong {
+  color: var(--navy, #102442);
+}
+
+.solvanta-trust .trust-action {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.solvanta-trust .trust-button {
+  display: inline-block;
+  padding: 14px 26px;
+  background: var(--navy, #102442);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.solvanta-trust .trust-button:hover {
+  background: #243e63;
+}
+
+.solvanta-trust .trust-button:focus-visible {
+  outline: 3px solid var(--gold, #c9a34a);
+  outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .solvanta-trust .trust-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .solvanta-trust {
+    padding: 55px 16px;
+  }
+
+  .solvanta-trust .trust-steps {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .solvanta-trust .trust-card {
+    padding: 24px 20px;
+  }
+
+  .solvanta-trust .trust-note {
+    padding: 18px;
+  }
+
+  .solvanta-trust .trust-button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
 
   <style>
     :root {
@@ -245,6 +399,84 @@
       font-size: 0.9rem;
       font-weight: 600;
     }
+
+<!-- How Solvanta Logistics Works -->
+<section class="solvanta-trust" id="how-we-work">
+  <div class="trust-container">
+
+    <div class="trust-heading">
+      <p class="trust-eyebrow">Our Approach</p>
+      <h2>A Clearer Way to Move Your Cargo</h2>
+      <p class="trust-intro">
+        International shipping involves many moving parts. Solvanta
+        Logistics helps coordinate the process by understanding your
+        requirements, arranging suitable logistics services and keeping
+        communication clear throughout your shipment.
+      </p>
+    </div>
+
+    <div class="trust-steps">
+
+      <article class="trust-card">
+        <span class="trust-number">01</span>
+        <h3>Understand Your Needs</h3>
+        <p>
+          Tell us what you need to move, where it is starting from,
+          its destination and any special handling requirements.
+          We use these details to understand the shipment.
+        </p>
+      </article>
+
+      <article class="trust-card">
+        <span class="trust-number">02</span>
+        <h3>Coordinate the Service</h3>
+        <p>
+          We work to identify suitable transport, freight or storage
+          arrangements through logistics partners, depending on your
+          cargo, route and service requirements.
+        </p>
+      </article>
+
+      <article class="trust-card">
+        <span class="trust-number">03</span>
+        <h3>Confirm the Details</h3>
+        <p>
+          Before you proceed, the applicable price, service scope,
+          collection and delivery arrangements, and estimated transit
+          information should be confirmed for your shipment.
+        </p>
+      </article>
+
+      <article class="trust-card">
+        <span class="trust-number">04</span>
+        <h3>Keep Communication Clear</h3>
+        <p>
+          We aim to keep you informed about agreed arrangements and
+          updates received from the relevant logistics partners.
+          If plans change, we will communicate the information available.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="trust-note">
+      <strong>Our commitment to transparency</strong>
+      <p>
+        Solvanta Logistics coordinates shipments through logistics
+        partners. Available services, routes, costs and transit estimates
+        depend on the shipment and partner confirmation. We aim to explain
+        the arrangements clearly before you commit to a booking.
+      </p>
+    </div>
+
+    <div class="trust-action">
+      <a class="trust-button" href="#contact">
+        Discuss Your Shipment
+      </a>
+    </div>
+
+  </div>
+</section>
 
     /* Tracking */
     .tracking { background: var(--light); }
