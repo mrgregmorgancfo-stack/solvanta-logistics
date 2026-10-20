@@ -1,0 +1,203 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solvanta Logistics provides storage, warehousing, distribution and shipping coordination services.">
+  <title>Solvanta Logistics | Your World. Our Network.</title>
+  <style>
+    :root {
+      --navy: #10243a;
+      --gold: #d5ad58;
+      --white: #ffffff;
+      --light: #f4f6f9;
+      --text: #293747;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand { font-size: 1.35rem; font-weight: 800; letter-spacing: 1px; }
+    .brand span { color: var(--gold); }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: .95rem;
+    }
+    .hero {
+      background: linear-gradient(120deg, #10243a, #1d3b59);
+      color: white;
+      padding: 95px 7%;
+    }
+    .hero-inner { max-width: 760px; }
+    .eyebrow {
+      color: var(--gold);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h1 { font-size: clamp(2.3rem, 6vw, 4.3rem); line-height: 1.12; margin: 15px 0; }
+    .hero p { font-size: 1.1rem; max-width: 620px; }
+    .button {
+      display: inline-block;
+      margin: 14px 10px 0 0;
+      padding: 13px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .primary { background: var(--gold); color: var(--navy); }
+    .secondary { border: 1px solid white; color: white; }
+    section { padding: 65px 7%; }
+    .section-heading { max-width: 700px; margin-bottom: 32px; }
+    h2 { color: var(--navy); font-size: 2rem; line-height: 1.2; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: var(--light);
+      padding: 25px;
+      border-radius: 8px;
+      border-top: 3px solid var(--gold);
+    }
+    .service h3 { color: var(--navy); margin-top: 0; }
+    .tracking { background: var(--light); }
+    .tracking-panel {
+      background: white;
+      padding: 28px;
+      max-width: 650px;
+      border-radius: 8px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.06);
+    }
+    input {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: 1px solid #ccd3dc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 13px 20px;
+      border: 0;
+      border-radius: 4px;
+      background: var(--navy);
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    #tracking-message { margin-top: 15px; font-weight: bold; }
+    .contact { background: white; }
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 25px 7%;
+    }
+    footer span { color: var(--gold); }
+    @media (max-width: 600px) {
+      header { align-items: flex-start; }
+      nav { width: 100%; }
+      nav a { margin: 0 12px 0 0; }
+      .hero { padding: 65px 7%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">SOLVANTA <span>LOGISTICS</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#tracking">Track shipment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Storage · Distribution · Logistics</div>
+        <h1>Your World.<br>Our Network.</h1>
+        <p>Practical logistics solutions for businesses and individuals. From storage and warehousing to delivery coordination, we help keep goods moving.</p>
+        <a class="button primary" href="#services">Explore our services</a>
+        <a class="button secondary" href="#contact">Contact our team</a>
+      </div>
+    </section><section id="services">
+  <div class="section-heading">
+    <div class="eyebrow">What we do</div>
+    <h2>Logistics made straightforward</h2>
+    <p>Flexible services designed around your storage, movement and distribution needs.</p>
+  </div>
+  <div class="services">
+    <article class="service">
+      <h3>Storage & Warehousing</h3>
+      <p>Organised storage solutions to help businesses manage goods and inventory.</p>
+    </article>
+    <article class="service">
+      <h3>Shipping Coordination</h3>
+      <p>Support coordinating shipment arrangements and logistics with relevant providers.</p>
+    </article>
+    <article class="service">
+      <h3>Distribution & Delivery</h3>
+      <p>Distribution planning and delivery coordination to help goods reach their destinations.</p>
+    </article>
+    <article class="service">
+      <h3>Shipment Updates</h3>
+      <p>Shipment status updates as information becomes available through our operations team.</p>
+    </article>
+  </div>
+</section>
+
+<section id="tracking" class="tracking">
+  <div class="section-heading">
+    <div class="eyebrow">Shipment enquiries</div>
+    <h2>Track your shipment</h2>
+    <p>Enter your tracking number to enquire about a shipment.</p>
+  </div>
+  <div class="tracking-panel">
+    <form id="tracking-form">
+      <label for="tracking-number"><strong>Tracking number</strong></label>
+      <input id="tracking-number" name="tracking-number" placeholder="Enter your tracking number" required>
+      <button type="submit">Check shipment</button>
+    </form>
+    <p id="tracking-message" role="status">Online tracking is not activated yet. Please contact our team for a shipment update.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-heading">
+    <div class="eyebrow">Get in touch</div>
+    <h2>Let's discuss your logistics needs</h2>
+    <p>Contact us to discuss storage, distribution or shipment coordination.</p>
+    <p><strong>Email:</strong> Add your official business email here.</p>
+    <p><strong>Phone:</strong> Add your business phone number here.</p>
+  </div>
+</section>
+
+  </main>  <footer>
+    <p><strong>SOLVANTA <span>LOGISTICS</span></strong></p>
+    <p>Your World. Our Network.</p>
+    <p>&copy; <span id="year"></span> Solvanta Logistics. All rights reserved.</p>
+  </footer>  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("tracking-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("tracking-message").textContent =
+        "Online tracking is not activated yet. Please contact our team for a shipment update.";
+    });
+  </script></body>
+</html>
