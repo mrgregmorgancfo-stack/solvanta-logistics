@@ -163,23 +163,37 @@
       font-weight: 800;
     }
 
-    .brand-name {
-      display: block;
-      color: var(--navy);
-      font-family: "Montserrat", Arial, sans-serif;
-      font-size: 1rem;
-      line-height: 1.35;
-      font-weight: 800;
-    }
+    
+.brand-name {
+  display: block;
+  color: var(--navy);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
 
-    .brand-tagline {
-      display: block;
-      color: #987426;
-      font-size: .68rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-top: 3px;
-    }
+.brand-tagline {
+  display: block;
+  color: #987426;
+  font-size: 0.58rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-top: 4px;
+  
+}
+
+@media (max-width: 560px) {
+  .brand-name {
+    font-size: 1.05rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.48rem;
+    letter-spacing: 0.9px;
+  }
+}
 
     .nav-links {
       display: flex;
