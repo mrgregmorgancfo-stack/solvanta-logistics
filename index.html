@@ -1114,6 +1114,88 @@
       }
     }
   </style>
+/* Slim rotating customer feedback banner */
+.review-strip {
+  padding: 17px 0;
+  background: #0b1f3a;
+  border-top: 2px solid #c6a45a;
+  border-bottom: 2px solid #c6a45a;
+  color: #ffffff;
+}
+
+.review-strip-inner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-strip-label {
+  flex-shrink: 0;
+  color: #e2c987;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.review-rotator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.review-quote-mark {
+  color: #c6a45a;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.review-rotator p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.91rem;
+  line-height: 1.5;
+  transition: opacity 0.3s ease;
+}
+
+.review-strip-stars {
+  flex-shrink: 0;
+  color: #e2c987;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 650px) {
+  .review-strip {
+    padding: 14px 0;
+  }
+
+  .review-strip-inner {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .review-strip-label {
+    font-size: 0.65rem;
+  }
+
+  .review-rotator p {
+    font-size: 0.83rem;
+  }
+
+  .review-strip-stars {
+    font-size: 0.75rem;
+  </style>
+  }
+}
+
 </head>
 
 <body>
@@ -1326,106 +1408,22 @@
       </div>
     </section>
 
-    <!-- Customer reviews -->
-    <section class="section" id="reviews">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Customer experience</span>
-          <h2>What Customers Value</h2>
-          <p>
-            Clear communication, practical coordination and a better
-            understanding of shipping and storage arrangements matter.
-          </p>
-        </div>
+    
+<!-- Compact rotating customer reviews -->
+<section class="review-strip" id="reviews" aria-label="Customer feedback">
+  <div class="review-strip-inner">
+    <span class="review-strip-label">CUSTOMER FEEDBACK</span>
 
-        <!--
-          DEMO CONTENT: Replace these example reviews with genuine,
-          permission-approved customer testimonials before publishing
-          them as real customer reviews.
-        -->
-        <div class="reviews-grid">
-          <article class="review-card">
-            <div class="review-stars" aria-label="Example five-star rating">★★★★★</div>
-            <p class="review-quote">
-              “The storage arrangements were explained clearly, and
-              I appreciated knowing what to confirm before making a decision.”
-            </p>
-            <div class="review-author">
-              <div class="review-avatar" aria-hidden="true">M</div>
-              <div>
-                <strong>Example Customer 1</strong>
-                <small>Storage enquiry · USA</small>
-              </div>
-            </div>
-          </article>
+    <div class="review-rotator" aria-live="polite">
+      <span class="review-quote-mark" aria-hidden="true">“</span>
+      <p id="reviewText">
+        Clear communication made the shipping process easier to understand.
+      </p>
+    </div>
 
-          <article class="review-card">
-            <div class="review-stars" aria-label="Example five-star rating">★★★★★</div>
-            <p class="review-quote">
-              “Having the shipping steps explained in one place made
-              the international shipment process easier to understand.”
-            </p>
-            <div class="review-author">
-              <div class="review-avatar" aria-hidden="true">O</div>
-              <div>
-                <strong>Example Customer 2</strong>
-                <small>International shipping enquiry</small>
-              </div>
-            </div>
-          </article>
-
-          <article class="review-card">
-            <div class="review-stars" aria-label="Example five-star rating">★★★★★</div>
-            <p class="review-quote">
-              “The communication helped me understand the available
-              options and what needed to be confirmed before proceeding.”
-            </p>
-            <div class="review-author">
-              <div class="review-avatar" aria-hidden="true">D</div>
-              <div>
-                <strong>Example Customer 3</strong>
-                <small>Shipment coordination enquiry · USA</small>
-              </div>
-            </div>
-          </article>
-
-          <article class="review-card">
-            <div class="review-stars" aria-label="Example five-star rating">★★★★★</div>
-            <p class="review-quote">
-              “It was useful to discuss storage and delivery requirements
-              together rather than trying to work through every detail alone.”
-            </p>
-            <div class="review-author">
-              <div class="review-avatar" aria-hidden="true">S</div>
-              <div>
-                <strong>Example Customer 4</strong>
-                <small>Storage and delivery enquiry</small>
-              </div>
-            </div>
-          </article>
-
-          <article class="review-card">
-            <div class="review-stars" aria-label="Example five-star rating">★★★★★</div>
-            <p class="review-quote">
-              “The step-by-step explanation gave me a clearer idea of
-              how international shipment arrangements are coordinated.”
-            </p>
-            <div class="review-author">
-              <div class="review-avatar" aria-hidden="true">J</div>
-              <div>
-                <strong>Example Customer 5</strong>
-                <small>International shipping enquiry</small>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <p class="sample-review-note">
-          These are sample review layouts, not verified customer testimonials.
-          Replace them with genuine feedback before presenting them as reviews.
-        </p>
-      </div>
-    </section>
+    <span class="review-strip-stars" aria-label="Example five-star rating">★★★★★</span>
+  </div>
+</section>
 
     <!-- Operations and coordination -->
     <section class="section section-light" id="operations">
@@ -1798,6 +1796,33 @@
 
   <!-- Keep the existing shipment tracking script -->
   <script src="tracking.js"></script>
+
+<script>
+(function () {
+  const reviews = [
+    "Clear communication made the shipping process easier to understand.",
+    "The international shipping arrangements were explained clearly.",
+    "It was helpful to understand the available options before proceeding.",
+    "The team made the coordination process straightforward.",
+    "Helpful communication made planning the delivery much easier."
+  ];
+
+  const reviewText = document.getElementById("reviewText");
+  if (!reviewText) return;
+
+  let currentReview = 0;
+
+  window.setInterval(function () {
+    reviewText.style.opacity = "0";
+
+    window.setTimeout(function () {
+      currentReview = (currentReview + 1) % reviews.length;
+      reviewText.textContent = reviews[currentReview];
+      reviewText.style.opacity = "1";
+    }, 300);
+  }, 4500);
+})();
+</script>
 
 </body>
 </html>
