@@ -10,6 +10,73 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+/* Solvanta Logistics customer reviews */
+.customer-reviews {
+  background: #f6f8fb;
+  padding: 75px 0;
+}
+
+.customer-reviews .reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.customer-reviews .review-card {
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 8px 24px rgba(11, 31, 58, 0.06);
+}
+
+.customer-reviews .review-stars {
+  color: #c6a45a;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.customer-reviews .review-card p {
+  color: #475467;
+  line-height: 1.75;
+}
+
+.customer-reviews .review-card h3 {
+  color: #0b1f3a;
+  font-size: 17px;
+  margin: 18px 0 4px;
+}
+
+.customer-reviews .review-location {
+  color: #667085;
+  font-size: 13px;
+}
+
+.customer-reviews .sample-label {
+  display: inline-block;
+  margin-top: 12px;
+  color: #667085;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  .customer-reviews .reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .customer-reviews {
+    padding: 50px 0;
+  }
+
+  .customer-reviews .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
   <style>
     :root{--navy:#102442;--navy-dark:#09182d;--navy-light:#243e63;--gold:#c9a34a;--gold-light:#e2c777;--white:#fff;--light:#f5f7fa;--text:#263449;--muted:#657186;--border:#e1e7ef;--shadow:0 10px 30px rgba(16,36,66,.08)}
     *{box-sizing:border-box;margin:0;padding:0}
@@ -139,6 +206,93 @@
       <div class="trust-note"><strong>Our commitment to transparency</strong><p>Solvanta Logistics coordinates shipments through logistics partners. Routes, services, costs and transit estimates depend on the shipment and partner confirmation. We aim to explain arrangements clearly before you commit to a booking.</p></div>
       <div class="trust-action"><a class="btn btn-primary" href="#contact">Discuss Your Shipment</a></div>
     </div></section>
+    
+<!-- Customer Reviews -->
+<section class="section customer-reviews" id="reviews">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Customer Feedback</div>
+      <h2>What Our Customers Say</h2>
+      <p>
+        Clear communication and carefully coordinated
+        logistics are at the heart of our service.
+      </p>
+    </div>
+
+    <div class="reviews-grid">
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="Sample five-star design">
+          ★★★★★
+        </div>
+        <p>
+          I needed a dependable solution to store my belongings
+          before arranging delivery. I appreciated the attention
+          given to keeping my items secure and coordinating
+          the delivery arrangements.
+        </p>
+        <h3>Michael Bennett</h3>
+        <div class="review-location">Denver, Colorado, USA</div>
+        <span class="sample-label">Sample review — replace with genuine feedback</span>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-hidden="true">★★★★★</div>
+        <p>
+          International shipping can feel complicated when
+          several arrangements are involved. Having one point
+          of contact to coordinate the process made the
+          requirements easier to understand.
+        </p>
+        <h3>Olivia Thompson</h3>
+        <div class="review-location">Manchester, United Kingdom</div>
+        <span class="sample-label">Sample review — replace with genuine feedback</span>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-hidden="true">★★★★★</div>
+        <p>
+          What I appreciated most was clear communication.
+          The explanations about the arrangements and next
+          steps helped make the shipping process less stressful.
+        </p>
+        <h3>Daniel Okafor</h3>
+        <div class="review-location">Houston, Texas, USA</div>
+        <span class="sample-label">Sample review — replace with genuine feedback</span>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-hidden="true">★★★★★</div>
+        <p>
+          Finding suitable storage and arranging onward delivery
+          can be challenging. Keeping the details organized
+          and communicating clearly about the arrangements
+          makes a real difference.
+        </p>
+        <h3>Sophie Schneider</h3>
+        <div class="review-location">Berlin, Germany</div>
+        <span class="sample-label">Sample review — replace with genuine feedback</span>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-hidden="true">★★★★★</div>
+        <p>
+          Coordinating an international shipment across
+          different locations can be overwhelming. Clear
+          explanations of the requirements, timing and
+          delivery arrangements make the process easier to follow.
+        </p>
+        <h3>James Wilson</h3>
+        <div class="review-location">Sydney, Australia</div>
+        <span class="sample-label">Sample review — replace with genuine feedback</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- End Customer Reviews -->
+
     <section class="section showcase" id="operations"><div class="container"><div class="section-heading"><div class="eyebrow">Moving Goods Forward</div><h2>Connecting Every Part of the Journey</h2><p>Explore the types of transport, cargo handling and delivery operations involved in international logistics.</p></div>
       <div class="showcase-grid">
         <div class="showcase-item"><img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1000&auto=format&fit=crop&q=80" alt="International shipping containers at a port" loading="lazy"><span>International Freight</span></div>
