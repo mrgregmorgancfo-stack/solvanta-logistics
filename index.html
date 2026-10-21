@@ -13,6 +13,52 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+/* Keep WhatsApp fixed at the bottom-left */
+#whatsapp-button,
+.whatsapp-button,
+.whatsapp-float,
+a[href*="wa.me"],
+a[href*="api.whatsapp.com"] {
+  position: fixed !important;
+  left: 20px !important;
+  right: auto !important;
+  bottom: 20px !important;
+  z-index: 9998 !important;
+}
+
+/* Keep Google Translate fixed at the bottom-right */
+#google_translate_element {
+  position: fixed !important;
+  right: 20px !important;
+  left: auto !important;
+  bottom: 20px !important;
+  z-index: 9999 !important;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Adjust positions for mobile screens */
+@media (max-width: 600px) {
+  #whatsapp-button,
+  .whatsapp-button,
+  .whatsapp-float,
+  a[href*="wa.me"],
+  a[href*="api.whatsapp.com"] {
+    left: 12px !important;
+    bottom: 12px !important;
+    right: auto !important;
+  }
+
+  #google_translate_element {
+    right: 12px !important;
+    bottom: 12px !important;
+    left: auto !important;
+    max-width: 60vw;
+  }
+}
+
   <style>
     :root {
       --navy: #102442;
