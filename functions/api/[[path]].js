@@ -1,14 +1,4 @@
-const ALLOWED_STATUSES = [
-  "Booking Confirmed",
-  "Awaiting Collection",
-  "Collected",
-  "In Transit",
-  "Customs Clearance",
-  "Out for Delivery",
-  "Delivered",
-  "On Hold",
-  "Cancelled"
-];
+const status = ALLOWED_STATUSES.includes(body.status) ? body.status : "Booking Confirmed";
 const SESSION_SECONDS = 60 * 60 * 8;
 
 function json(data, status = 200, headers = {}) {
@@ -154,7 +144,7 @@ export async function onRequest(context) {
     const origin = text(body.origin, 180);
     const destination = text(body.destination, 180);
     const goods = text(body.goods_description, 300);
-    const status = ALLOWED_STATUSES.includes(body.status) ? body.status : "Booking Confirmed";
+    const status = "Shipment Received";
     const note = text(body.public_note, 500);
     if (!customerName || !origin || !destination) return fail("Customer name, origin, and destination are required.");
     if (customerEmail && !validEmail(customerEmail)) return fail("Enter a valid customer email or leave it blank.");
