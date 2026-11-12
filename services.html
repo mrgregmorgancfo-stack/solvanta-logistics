@@ -996,7 +996,7 @@
         and commercial enquiries.
       </p>
 
-      <img src="images/solvanta-team.jpg"
+      <img src="images/services-hero-team.jpg"
            alt="Illustrative professional logistics team in a warehouse">
     </div>
   </section>
@@ -1100,6 +1100,19 @@
         .setAttribute("aria-expanded", "false");
     });
   });
+</script>
+
+
+<script>
+document.querySelectorAll("img").forEach((image) => {
+  image.loading = "lazy";
+  image.decoding = "async";
+  image.addEventListener("error", () => {
+    image.classList.add("image-unavailable");
+    image.alt = image.alt || "Solvanta Logistics image";
+    image.style.visibility = "hidden";
+  }, { once: true });
+});
 </script>
 
 </body>
