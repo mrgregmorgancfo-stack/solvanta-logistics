@@ -1,0 +1,1106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Services | Solvanta Logistics</title>
+  <meta name="description" content="Explore Solvanta Logistics services including temperature-controlled storage, specialist storage, warehousing, freight, transportation, sourcing and distribution.">
+
+  <style>
+    :root {
+      --navy: #10213a;
+      --navy-light: #1b3455;
+      --gold: #c9a45c;
+      --gold-light: #e1c58d;
+      --white: #ffffff;
+      --light: #f5f7fa;
+      --text: #263447;
+      --muted: #687789;
+      --border: #e5e9ef;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    header {
+      background: var(--navy);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,.12);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .logo span {
+      display: block;
+      color: var(--gold-light);
+      font-size: 10px;
+      letter-spacing: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      transition: .2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--gold-light);
+    }
+
+    .nav-quote {
+      background: var(--gold);
+      color: var(--navy) !important;
+      padding: 11px 17px;
+      border-radius: 4px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: transparent;
+      color: white;
+      border: 0;
+      font-size: 27px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 510px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(9,24,43,.94), rgba(9,24,43,.58)),
+        url("images/services-hero-team.jpg") center/cover no-repeat;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 85px 0;
+    }
+
+    .eyebrow {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 17px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1.13;
+      margin-bottom: 23px;
+    }
+
+    .hero p {
+      color: #e2e8f0;
+      max-width: 650px;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: .2s;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.7);
+      color: white;
+      margin-left: 10px;
+    }
+
+    /* Introduction */
+
+    .intro {
+      padding: 75px 0 45px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: #a47d35;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading {
+      color: var(--navy);
+      font-size: clamp(27px, 3vw, 38px);
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .section-description {
+      max-width: 760px;
+      margin: auto;
+      color: var(--muted);
+    }
+
+    /* Service cards */
+
+    .services {
+      padding: 35px 0 85px;
+      background: var(--light);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 38px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(16,33,58,.10);
+    }
+
+    .service-card img {
+      display: block;
+      width: 100%;
+      height: 215px;
+      object-fit: cover;
+      background: #e9edf2;
+    }
+
+    .service-content {
+      padding: 24px;
+    }
+
+    .service-number {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .service-card h3 {
+      color: var(--navy);
+      font-size: 19px;
+      margin: 7px 0 12px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .service-card a {
+      color: #99722e;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    /* Storage feature */
+
+    .storage-feature {
+      padding: 85px 0;
+      background: white;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .feature-image img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .feature-text h2 {
+      color: var(--navy);
+      font-size: 34px;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    .feature-text p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 20px 0 28px;
+    }
+
+    .feature-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      color: #b18b48;
+      font-weight: 800;
+      margin-right: 12px;
+    }
+
+    /* Specialist storage */
+
+    .specialist {
+      background: var(--navy);
+      color: white;
+      padding: 85px 0;
+    }
+
+    .specialist .section-heading {
+      color: white;
+    }
+
+    .specialist .section-description {
+      color: #cbd5e1;
+    }
+
+    .specialist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 50px;
+      margin-top: 42px;
+    }
+
+    .specialist-grid img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .specialist-copy h3 {
+      color: var(--gold-light);
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .specialist-copy p {
+      color: #d6deea;
+      margin-bottom: 17px;
+    }
+
+    .specialist-copy ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .specialist-copy li {
+      padding: 7px 0;
+      color: #f1f5f9;
+    }
+
+    .specialist-copy li::before {
+      content: "•";
+      color: var(--gold);
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    /* Commercial section */
+
+    .commercial {
+      padding: 85px 0;
+      background: var(--light);
+    }
+
+    .commercial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+      margin-top: 35px;
+    }
+
+    .commercial-grid img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .commercial-copy h3 {
+      color: var(--navy);
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+
+    .commercial-copy p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .commercial-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 25px 0;
+    }
+
+    .commercial-points div {
+      background: white;
+      padding: 15px;
+      border-left: 3px solid var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* Human team section */
+
+    .people {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .people img {
+      width: 100%;
+      max-width: 850px;
+      height: 370px;
+      object-fit: cover;
+      border-radius: 9px;
+      margin-top: 35px;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 75px 0;
+      background: var(--navy-light);
+      text-align: center;
+      color: white;
+    }
+
+    .cta h2 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 27px;
+      color: #d6deea;
+    }
+
+    /* Footer */
+
+    footer {
+      background: #091729;
+      color: white;
+      padding: 55px 0 22px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    footer h3 {
+      color: var(--gold-light);
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #cbd5e1;
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+    }
+
+    footer a:hover {
+      color: var(--gold-light);
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.13);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #9eacbd;
+    }
+
+    /* WhatsApp */
+
+    .whatsapp {
+      position: fixed;
+      left: 20px;
+      bottom: 22px;
+      z-index: 999;
+      width: 54px;
+      height: 54px;
+      background: #20b966;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    }
+
+    /* Responsive */
+
+    @media(max-width: 900px) {
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a {
+        font-size: 11px;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 700px) {
+      .navbar {
+        min-height: 70px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--navy);
+        padding: 18px 5%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+      }
+
+      .nav-quote {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .hero {
+        min-height: 450px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .btn {
+        margin-bottom: 10px;
+      }
+
+      .btn-outline {
+        margin-left: 0;
+      }
+
+      .service-grid,
+      .feature-grid,
+      .specialist-grid,
+      .commercial-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-image img,
+      .specialist-grid img,
+      .commercial-grid img {
+        height: 280px;
+      }
+
+      .feature-text h2,
+      .cta h2 {
+        font-size: 28px;
+      }
+
+      .people img {
+        height: 250px;
+      }
+    }
+
+    @media(max-width: 430px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .commercial-points {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo">
+      SOLVANTA
+      <span>LOGISTICS</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation"
+      aria-expanded="false" onclick="toggleMenu()">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="commercial.html">Commercial Operations</a>
+      <a href="index.html#track">Track Shipment</a>
+      <a href="index.html#contact" class="nav-quote">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">Solvanta Logistics | Our Services</div>
+
+        <h1>Integrated Logistics, Storage & Commercial Solutions</h1>
+
+        <p>
+          From international freight and transportation to specialist
+          storage, temperature-controlled facilities and commercial
+          supply, we connect businesses with coordinated solutions
+          for their operational needs.
+        </p>
+
+        <a href="index.html#contact" class="btn btn-gold">
+          Discuss Your Requirements
+        </a>
+
+        <a href="#all-services" class="btn btn-outline">
+          Explore Our Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRODUCTION -->
+
+  <section class="intro container">
+    <div class="section-label">What We Do</div>
+
+    <h2 class="section-heading">Solutions Designed Around Your Needs</h2>
+
+    <p class="section-description">
+      Solvanta Logistics brings together logistics coordination,
+      storage, transportation, commercial sourcing and distribution.
+      We aim to provide practical solutions suited to the requirements
+      of businesses and individual customers.
+    </p>
+  </section>
+
+  <!-- SERVICES GRID -->
+
+  <section class="services" id="all-services">
+    <div class="container">
+
+      <div class="section-label">Our Capabilities</div>
+      <h2 class="section-heading">Our Services</h2>
+
+      <p class="section-description">
+        Explore our range of logistics and commercial services.
+        Specific availability, facility capabilities and arrangements
+        are confirmed according to each customer's requirements.
+      </p>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <img src="images/temperature-controlled-storage.jpg"
+               alt="Temperature-controlled warehouse storage">
+          <div class="service-content">
+            <span class="service-number">01 / STORAGE</span>
+            <h3>Temperature-Controlled Storage</h3>
+            <p>
+              Chilled, frozen and climate-controlled storage
+              solutions for products requiring specific
+              environmental conditions.
+            </p>
+            <a href="#temperature-storage">Explore Storage →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="images/specialist-piano-storage.jpg"
+               alt="Professionals carefully protecting a piano">
+          <div class="service-content">
+            <span class="service-number">02 / SPECIALIST CARE</span>
+            <h3>Specialist Storage</h3>
+            <p>
+              Carefully coordinated storage for pianos,
+              antiques, artwork, fine furniture and delicate
+              or valuable belongings.
+            </p>
+            <a href="#specialist-storage">Explore Storage →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="images/general-warehousing.jpg"
+               alt="Commercial warehouse inventory">
+          <div class="service-content">
+            <span class="service-number">03 / WAREHOUSING</span>
+            <h3>General Warehousing</h3>
+            <p>
+              Storage arrangements for commercial inventory,
+              business supplies, wholesale products and
+              general cargo.
+            </p>
+            <a href="index.html#contact">Make an Enquiry →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="images/ocean-freight.jpg"
+               alt="International cargo containers at a shipping port">
+          <div class="service-content">
+            <span class="service-number">04 / INTERNATIONAL FREIGHT</span>
+            <h3>Ocean & Sea Freight</h3>
+            <p>
+              Coordination of international sea freight,
+              container shipping and commercial cargo movements.
+            </p>
+            <a href="index.html#contact">Request Information →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="images/air-freight.jpg"
+               alt="Air cargo loading operations">
+          <div class="service-content">
+            <span class="service-number">05 / INTERNATIONAL FREIGHT</span>
+            <h3>Air Freight</h3>
+            <p>
+              Coordination of suitable air cargo transportation
+              for domestic and international shipments.
+            </p>
+            <a href="index.html#contact">Request Information →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="images/road-transport.jpg"
+               alt="Commercial freight truck on a highway">
+          <div class="service-content">
+            <span class="service-number">06 / TRANSPORTATION</span>
+            <h3>Road Transportation</h3>
+            <p>
+              Coordination of road freight, cargo movement,
+              collections and domestic transportation.
+            </p>
+            <a href="index.html#contact">Make an Enquiry →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="images/last-mile-delivery.jpg"
+               alt="Delivery personnel handling customer parcels">
+          <div class="service-content">
+            <span class="service-number">07 / DELIVERY</span>
+            <h3>Last-Mile Delivery</h3>
+            <p>
+              Coordination of final delivery from warehouses,
+              distribution centres and collection points
+              to agreed destinations.
+            </p>
+            <a href="index.html#contact">Make an Enquiry →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="images/commercial-sourcing.jpg"
+               alt="Commercial procurement professional inspecting products">
+          <div class="service-content">
+            <span class="service-number">08 / COMMERCIAL</span>
+            <h3>Commercial Sourcing, Supply & Distribution</h3>
+            <p>
+              Product sourcing, wholesale procurement,
+              supplier partnerships and commercial
+              distribution opportunities.
+            </p>
+            <a href="commercial.html">Explore Commercial Operations →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMPERATURE STORAGE FEATURE -->
+
+  <section class="storage-feature" id="temperature-storage">
+    <div class="container feature-grid">
+
+      <div class="feature-image">
+        <img src="images/temperature-controlled-storage.jpg"
+             alt="Temperature-controlled storage facility">
+      </div>
+
+      <div class="feature-text">
+        <div class="section-label">Specialised Storage Solutions</div>
+
+        <h2>Temperature-Controlled Storage</h2>
+
+        <p>
+          Certain products require more than conventional warehouse
+          conditions. Our temperature-controlled storage offering
+          is designed for goods requiring specific environmental
+          conditions during storage.
+        </p>
+
+        <p>
+          Our intended facility capabilities cover different
+          temperature requirements, subject to the operational
+          specifications of each storage area.
+        </p>
+
+        <ul class="feature-list">
+          <li>Chilled storage environments</li>
+          <li>Frozen storage environments</li>
+          <li>Climate-controlled storage</li>
+          <li>Temperature-sensitive commercial inventory</li>
+          <li>Storage arrangements assessed by product requirements</li>
+        </ul>
+
+        <a href="index.html#contact" class="btn btn-gold">
+          Enquire About Temperature Storage
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SPECIALIST STORAGE -->
+
+  <section class="specialist" id="specialist-storage">
+    <div class="container">
+
+      <div class="section-label">Careful Handling & Protection</div>
+      <h2 class="section-heading">Specialist Storage for Delicate Items</h2>
+
+      <p class="section-description">
+        Some belongings require additional care, suitable packaging
+        and appropriate storage arrangements. We recognise the
+        importance of protecting items that cannot be treated
+        as ordinary cargo.
+      </p>
+
+      <div class="specialist-grid">
+
+        <img src="images/specialist-piano-storage.jpg"
+             alt="Specialist movers protecting a piano">
+
+        <div class="specialist-copy">
+          <h3>More Than Ordinary Storage</h3>
+
+          <p>
+            We cater to enquiries involving delicate, valuable,
+            oversized and sensitive belongings requiring
+            additional handling consideration.
+          </p>
+
+          <ul>
+            <li>Upright and grand pianos</li>
+            <li>Musical instruments</li>
+            <li>Antiques and collectibles</li>
+            <li>Fine and handcrafted furniture</li>
+            <li>Artwork and decorative pieces</li>
+            <li>Selected specialist equipment</li>
+          </ul>
+
+          <p>
+            Storage arrangements, packaging, handling procedures
+            and insurance options are discussed and confirmed
+            according to individual requirements.
+          </p>
+
+          <a href="index.html#contact" class="btn btn-gold">
+            Discuss Specialist Storage
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMERCIAL OPERATIONS -->
+
+  <section class="commercial">
+    <div class="container">
+
+      <div class="section-label">Beyond Logistics</div>
+      <h2 class="section-heading">Commercial Sourcing, Supply & Distribution</h2>
+
+      <div class="commercial-grid">
+
+        <img src="images/commercial-sourcing.jpg"
+             alt="Commercial procurement and warehouse operations">
+
+        <div class="commercial-copy">
+          <h3>Connecting Businesses With Products & Suppliers</h3>
+
+          <p>
+            Our commercial operations focus on identifying
+            manufacturers, wholesalers and suppliers while
+            supporting business customers with sourcing,
+            procurement and distribution requirements.
+          </p>
+
+          <p>
+            We welcome enquiries from businesses looking for
+            products and manufacturers interested in developing
+            potential supply and distribution relationships.
+          </p>
+
+          <div class="commercial-points">
+            <div>Product Sourcing</div>
+            <div>Wholesale Procurement</div>
+            <div>Commercial Supply</div>
+            <div>Distribution Partnerships</div>
+          </div>
+
+          <a href="commercial.html" class="btn btn-gold">
+            Explore Commercial Operations
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PEOPLE -->
+
+  <section class="people">
+    <div class="container">
+      <div class="section-label">People & Coordination</div>
+
+      <h2 class="section-heading">A Coordinated Approach to Every Requirement</h2>
+
+      <p class="section-description">
+        Clear communication, careful planning and professional
+        coordination are central to the way we approach logistics
+        and commercial enquiries.
+      </p>
+
+      <img src="images/solvanta-team.jpg"
+           alt="Illustrative professional logistics team in a warehouse">
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+
+  <section class="cta">
+    <div class="container">
+      <div class="section-label">Let's Work Together</div>
+
+      <h2>How Can We Support Your Business?</h2>
+
+      <p>
+        Whether you require freight coordination, specialist storage,
+        temperature-controlled storage or commercial sourcing,
+        contact Solvanta Logistics to discuss your requirements.
+      </p>
+
+      <a href="index.html#contact" class="btn btn-gold">
+        Contact Our Team
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <a href="index.html" class="logo">
+          SOLVANTA
+          <span>LOGISTICS</span>
+        </a>
+
+        <p style="margin-top:18px; max-width:330px;">
+          Your World. Our Network.
+
+          Connecting logistics, storage, commercial sourcing
+          and distribution opportunities.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="commercial.html">Commercial Operations</a>
+        <a href="index.html#track">Track Shipment</a>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <a href="mailto:info@solvantalogistics.com">
+          info@solvantalogistics.com
+        </a>
+        <a href="tel:+19713615379">+1 971 361 5379</a>
+        <a href="index.html#contact">Send an Enquiry</a>
+        <p>Oregon, USA</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Solvanta Logistics. All rights reserved.
+      <br>
+      Your World. Our Network.
+    </div>
+
+  </div>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/19713615379"
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact Solvanta Logistics on WhatsApp">W</a>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    const button = document.querySelector(".menu-toggle");
+
+    menu.classList.toggle("show");
+
+    button.setAttribute(
+      "aria-expanded",
+      menu.classList.contains("show")
+    );
+  }
+
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      document.getElementById("navLinks").classList.remove("show");
+      document.querySelector(".menu-toggle")
+        .setAttribute("aria-expanded", "false");
+    });
+  });
+</script>
+
+</body>
+</html>
