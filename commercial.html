@@ -121,7 +121,7 @@ header {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(9,24,43,.94), rgba(9,24,43,.55)),
-    url("images/commercial-hero.jpg") center/cover no-repeat;
+    url("images/commercial-sourcing.jpg") center/cover no-repeat;
   color: white;
 }
 
@@ -684,7 +684,7 @@ footer a:hover {
     <div class="activity-grid">
 
       <article class="activity-card">
-        <img src="images/product-sourcing.jpg"
+        <img src="images/commercial-sourcing.jpg"
              alt="Commercial sourcing and product selection">
 
         <div class="activity-content">
@@ -699,7 +699,7 @@ footer a:hover {
       </article>
 
       <article class="activity-card">
-        <img src="images/wholesale-procurement.jpg"
+        <img src="images/general-warehousing.jpg"
              alt="Wholesale purchasing and procurement">
 
         <div class="activity-content">
@@ -714,7 +714,7 @@ footer a:hover {
       </article>
 
       <article class="activity-card">
-        <img src="images/product-supply.jpg"
+        <img src="images/commercial-sourcing.jpg"
              alt="Commercial product supply and inventory">
 
         <div class="activity-content">
@@ -729,7 +729,7 @@ footer a:hover {
       </article>
 
       <article class="activity-card">
-        <img src="images/distribution.jpg"
+        <img src="images/last-mile-delivery.jpg"
              alt="Wholesale distribution and warehouse operations">
 
         <div class="activity-content">
@@ -744,7 +744,7 @@ footer a:hover {
       </article>
 
       <article class="activity-card">
-        <img src="images/supplier-partnership.jpg"
+        <img src="images/services-hero-team.jpg"
              alt="Business professionals discussing a supplier partnership">
 
         <div class="activity-content">
@@ -759,7 +759,7 @@ footer a:hover {
       </article>
 
       <article class="activity-card">
-        <img src="images/commercial-logistics.jpg"
+        <img src="images/ocean-freight.jpg"
              alt="Commercial goods being prepared for transportation">
 
         <div class="activity-content">
@@ -913,7 +913,7 @@ footer a:hover {
 <section class="partners">
   <div class="container partner-grid">
 
-    <img src="images/supplier-partnership.jpg"
+    <img src="images/services-hero-team.jpg"
          alt="Professional business people discussing commercial supply">
 
     <div class="partner-copy">
@@ -1111,6 +1111,19 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     document.querySelector(".menu-toggle")
       .setAttribute("aria-expanded", "false");
   });
+});
+</script>
+
+
+<script>
+document.querySelectorAll("img").forEach((image) => {
+  image.loading = "lazy";
+  image.decoding = "async";
+  image.addEventListener("error", () => {
+    image.classList.add("image-unavailable");
+    image.alt = image.alt || "Solvanta Logistics image";
+    image.style.visibility = "hidden";
+  }, { once: true });
 });
 </script>
 
