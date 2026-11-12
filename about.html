@@ -1,0 +1,1001 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | Solvanta Logistics</title>
+
+<meta name="description" content="Learn about Solvanta Logistics, our logistics services, specialist storage, commercial sourcing, wholesale supply and distribution operations.">
+
+<style>
+:root {
+  --navy: #10213a;
+  --navy-light: #1b3455;
+  --gold: #c9a45c;
+  --gold-light: #e1c58d;
+  --white: #ffffff;
+  --light: #f5f7fa;
+  --text: #263447;
+  --muted: #687789;
+  --border: #e5e9ef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1180px;
+  margin: auto;
+}
+
+/* NAVIGATION */
+
+header {
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 15px rgba(0,0,0,.12);
+}
+
+.navbar {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.logo span {
+  display: block;
+  color: var(--gold-light);
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--gold-light);
+}
+
+.nav-quote {
+  background: var(--gold);
+  color: var(--navy) !important;
+  padding: 11px 17px;
+  border-radius: 4px;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 510px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(9,24,43,.94), rgba(9,24,43,.55)),
+    url("images/about-hero-team.jpg") center/cover no-repeat;
+  color: white;
+}
+
+.hero-content {
+  max-width: 760px;
+  padding: 85px 0;
+}
+
+.eyebrow {
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.13;
+  margin-bottom: 23px;
+}
+
+.hero p {
+  color: #e2e8f0;
+  max-width: 650px;
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 23px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: .2s;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+/* INTRODUCTION */
+
+.section {
+  padding: 85px 0;
+}
+
+.section-label {
+  color: #a47d35;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.section-heading {
+  color: var(--navy);
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  color: var(--muted);
+  max-width: 760px;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* BUSINESS AREAS */
+
+.business-areas {
+  background: var(--light);
+  padding: 85px 0;
+}
+
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 38px;
+}
+
+.area-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.area-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.area-content {
+  padding: 27px;
+}
+
+.area-content h3 {
+  color: var(--navy);
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.area-content p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.area-content a {
+  color: #99722e;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* MISSION AND VISION */
+
+.mission {
+  background: var(--navy);
+  color: white;
+}
+
+.mission .section-heading {
+  color: white;
+}
+
+.mission .section-description {
+  color: #cbd5e1;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.mission-card {
+  padding: 32px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+}
+
+.mission-card h3 {
+  color: var(--gold-light);
+  font-size: 23px;
+  margin-bottom: 14px;
+}
+
+.mission-card p {
+  color: #d6deea;
+  font-size: 14px;
+}
+
+/* VALUES */
+
+.values {
+  background: var(--light);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 38px;
+}
+
+.value-card {
+  padding: 27px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+}
+
+.value-card h3 {
+  color: var(--navy);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.value-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* STORAGE */
+
+.storage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.storage img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.storage-copy p {
+  color: var(--muted);
+  margin-bottom: 17px;
+}
+
+/* TEAM */
+
+.team {
+  background: var(--light);
+  text-align: center;
+}
+
+.team img {
+  width: 100%;
+  max-width: 900px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 9px;
+  margin-top: 35px;
+}
+
+/* CTA */
+
+.cta {
+  background: var(--navy-light);
+  color: white;
+  text-align: center;
+  padding: 75px 0;
+}
+
+.cta h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  max-width: 680px;
+  margin: 0 auto 27px;
+  color: #d6deea;
+}
+
+/* FOOTER */
+
+footer {
+  background: #091729;
+  color: white;
+  padding: 55px 0 22px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+footer h3 {
+  color: var(--gold-light);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+footer p,
+footer a {
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+footer a {
+  display: block;
+  margin-bottom: 9px;
+}
+
+footer a:hover {
+  color: var(--gold-light);
+}
+
+.copyright {
+  border-top: 1px solid rgba(255,255,255,.13);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #9eacbd;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+  position: fixed;
+  left: 20px;
+  bottom: 22px;
+  z-index: 999;
+  width: 54px;
+  height: 54px;
+  background: #20b966;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+}
+
+/* MOBILE */
+
+@media(max-width: 900px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+}
+
+@media(max-width: 700px) {
+  .navbar {
+    min-height: 70px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    padding: 18px 5%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+
+  .nav-quote {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .hero {
+    min-height: 450px;
+  }
+
+  .hero-content {
+    padding: 65px 0;
+  }
+
+  .intro-grid,
+  .area-grid,
+  .mission-grid,
+  .values-grid,
+  .storage,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-image img,
+  .storage img {
+    height: 280px;
+  }
+
+  .team img {
+    height: 250px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+
+    <a href="index.html" class="logo">
+      SOLVANTA
+      <span>LOGISTICS</span>
+    </a>
+
+    <button class="menu-toggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      onclick="toggleMenu()">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="commercial.html">Commercial Operations</a>
+      <a href="index.html#track">Track Shipment</a>
+      <a href="index.html#contact" class="nav-quote">Get a Quote</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+
+      <div class="eyebrow">About Solvanta Logistics</div>
+
+      <h1>Connecting Businesses, Products & Markets</h1>
+
+      <p>
+        We are an international logistics and commercial
+        supply company focused on logistics coordination,
+        specialist storage, product sourcing, wholesale
+        supply and distribution.
+      </p>
+
+      <a href="services.html" class="btn btn-gold">
+        Explore Our Services
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE ARE -->
+
+<section class="section">
+  <div class="container intro-grid">
+
+    <div>
+      <div class="section-label">Who We Are</div>
+
+      <h2 class="section-heading">
+        About Solvanta Logistics
+      </h2>
+
+      <p class="section-description">
+        Solvanta Logistics is an international logistics
+        and commercial supply company focused on connecting
+        businesses with products, suppliers and coordinated
+        logistics solutions.
+      </p>
+
+      <br>
+
+      <p class="section-description">
+        Our business operates across two complementary
+        areas: logistics operations and commercial operations.
+        Through these activities, we support transportation,
+        storage, procurement, product supply and distribution
+        requirements.
+      </p>
+
+      <br>
+
+      <p class="section-description">
+        We aim to establish productive relationships with
+        manufacturers, wholesalers, logistics providers,
+        distribution partners and business customers.
+        Our approach is built around effective coordination,
+        clear communication and practical commercial solutions.
+      </p>
+    </div>
+
+    <div class="intro-image">
+      <img src="images/about-warehouse-team.jpg"
+           alt="Professional logistics team working in a warehouse">
+    </div>
+
+  </div>
+</section>
+
+<!-- OUR BUSINESS -->
+
+<section class="business-areas">
+  <div class="container">
+
+    <div class="section-label">Our Business</div>
+
+    <h2 class="section-heading">
+      Two Complementary Areas of Operation
+    </h2>
+
+    <p class="section-description">
+      We bring together logistics capabilities and
+      commercial opportunities to support the movement
+      and supply of products across business markets.
+    </p>
+
+    <div class="area-grid">
+
+      <article class="area-card">
+        <img src="images/about-logistics.jpg"
+             alt="International logistics and freight operations">
+
+        <div class="area-content">
+          <h3>Logistics Operations</h3>
+
+          <p>
+            Our logistics operations focus on coordinating
+            freight transportation, warehousing, storage,
+            specialist handling, road transport and
+            last-mile delivery through suitable logistics
+            arrangements and service providers.
+          </p>
+
+          <a href="services.html">
+            Explore Logistics Services →
+          </a>
+        </div>
+      </article>
+
+      <article class="area-card">
+        <img src="images/about-commercial.jpg"
+             alt="Commercial procurement and product supply">
+
+        <div class="area-content">
+          <h3>Commercial Operations</h3>
+
+          <p>
+            Our commercial operations focus on product
+            sourcing, wholesale procurement, supplier
+            relationships, commercial supply and
+            distribution opportunities.
+          </p>
+
+          <a href="commercial.html">
+            Explore Commercial Operations →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- MISSION AND VISION -->
+
+<section class="section mission">
+  <div class="container">
+
+    <div class="section-label">Our Purpose</div>
+
+    <h2 class="section-heading">
+      Our Mission & Vision
+    </h2>
+
+    <p class="section-description">
+      Our direction is guided by our commitment to
+      practical business solutions, effective coordination
+      and lasting commercial relationships.
+    </p>
+
+    <div class="mission-grid">
+
+      <div class="mission-card">
+        <h3>Our Mission</h3>
+
+        <p>
+          To connect businesses with dependable logistics
+          solutions, suitable suppliers and commercial
+          opportunities through effective coordination,
+          responsible service delivery and strong
+          business relationships.
+        </p>
+      </div>
+
+      <div class="mission-card">
+        <h3>Our Vision</h3>
+
+        <p>
+          To develop Solvanta Logistics into a recognised
+          international logistics and commercial supply
+          business, supporting the movement, sourcing
+          and distribution of products across markets.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OUR VALUES -->
+
+<section class="section values">
+  <div class="container">
+
+    <div class="section-label">What Guides Us</div>
+
+    <h2 class="section-heading">
+      Our Business Values
+    </h2>
+
+    <p class="section-description">
+      The principles that guide our approach to
+      customers, suppliers and business partners.
+    </p>
+
+    <div class="values-grid">
+
+      <div class="value-card">
+        <h3>Reliability</h3>
+        <p>
+          We value clear communication, responsible
+          coordination and dependable business relationships.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Professionalism</h3>
+        <p>
+          We approach enquiries, commercial relationships
+          and service requirements with care and attention.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Partnership</h3>
+        <p>
+          We believe effective collaboration with suppliers,
+          customers and service providers creates
+          long-term business opportunities.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Accountability</h3>
+        <p>
+          We aim to communicate requirements, service
+          arrangements and expectations clearly.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Adaptability</h3>
+        <p>
+          We recognise that different customers and
+          industries require different commercial
+          and logistics solutions.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Continuous Development</h3>
+        <p>
+          We seek opportunities to develop our services,
+          capabilities and business relationships.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALIST STORAGE -->
+
+<section class="section">
+  <div class="container storage">
+
+    <img src="images/about-specialist-storage.jpg"
+         alt="Careful handling of a delicate piano in storage">
+
+    <div class="storage-copy">
+
+      <div class="section-label">Specialist Storage</div>
+
+      <h2 class="section-heading">
+        Care Beyond Conventional Storage
+      </h2>
+
+      <p>
+        We recognise that some items require additional
+        consideration when being stored or transported.
+      </p>
+
+      <p>
+        Our specialist storage offering covers enquiries
+        involving pianos, musical instruments, antiques,
+        fine furniture, artwork and other delicate or
+        valuable belongings.
+      </p>
+
+      <p>
+        We also include temperature-controlled storage
+        within our wider storage service offering,
+        covering chilled, frozen and climate-controlled
+        requirements.
+      </p>
+
+      <a href="services.html" class="btn btn-gold">
+        Discover Our Storage Services
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- OUR PEOPLE -->
+
+<section class="section team">
+  <div class="container">
+
+    <div class="section-label">People & Coordination</div>
+
+    <h2 class="section-heading">
+      Building Relationships Through Business
+    </h2>
+
+    <p class="section-description">
+      Our business is built around communication,
+      coordination and collaboration with customers,
+      manufacturers, suppliers and logistics partners.
+    </p>
+
+    <img src="images/solvanta-team.jpg"
+         alt="Illustrative professional logistics team">
+
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+  <div class="container">
+
+    <div class="section-label">Let's Connect</div>
+
+    <h2>Let's Build a Business Relationship</h2>
+
+    <p>
+      Whether you are looking for logistics coordination,
+      storage, product sourcing, wholesale supply or
+      distribution opportunities, we welcome the
+      opportunity to discuss your requirements.
+    </p>
+
+    <a href="index.html#contact" class="btn btn-gold">
+      Contact Solvanta Logistics
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <a href="index.html" class="logo">
+          SOLVANTA
+          <span>LOGISTICS</span>
+        </a>
+
+        <p style="margin-top:18px; max-width:330px;">
+          Your World. Our Network.
+
+          Connecting logistics, storage, commercial
+          sourcing and distribution opportunities.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="commercial.html">Commercial Operations</a>
+        <a href="index.html#track">Track Shipment</a>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+
+        <a href="mailto:info@solvantalogistics.com">
+          info@solvantalogistics.com
+        </a>
+
+        <a href="tel:+19713615379">
+          +1 971 361 5379
+        </a>
+
+        <a href="index.html#contact">
+          Send an Enquiry
+        </a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Solvanta Logistics. All rights reserved.
+      <br>
+      Your World. Our Network.
+    </div>
+
+  </div>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/19713615379"
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact Solvanta Logistics on WhatsApp">W</a>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("navLinks");
+  const button = document.querySelector(".menu-toggle");
+
+  menu.classList.toggle("show");
+
+  button.setAttribute(
+    "aria-expanded",
+    menu.classList.contains("show")
+  );
+}
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("navLinks").classList.remove("show");
+
+    document.querySelector(".menu-toggle")
+      .setAttribute("aria-expanded", "false");
+  });
+});
+</script>
+
+</body>
+</html>
