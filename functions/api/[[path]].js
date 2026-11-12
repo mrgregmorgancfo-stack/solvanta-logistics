@@ -1,4 +1,13 @@
-const status = ALLOWED_STATUSES.includes(body.status) ? body.status : "Booking Confirmed";
+const ALLOWED_STATUSES = [
+  "Booking Confirmed",
+  "Awaiting Collection",
+  "Collected",
+  "In Transit",
+  "Customs Clearance",
+  "Out for Delivery",
+  "Delivered",
+  "Shipment Received"
+];
 const SESSION_SECONDS = 60 * 60 * 8;
 
 function json(data, status = 200, headers = {}) {
