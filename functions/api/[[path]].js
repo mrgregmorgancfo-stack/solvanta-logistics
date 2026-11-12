@@ -8,16 +8,8 @@ const ALLOWED_STATUSES = [
   "Delivered",
   "Shipment Received"
 ];
-const SESSION_SECONDS = 60 * 60 * 8;
 
-function json(data, status = 200, headers = {}) {
-  return new Response(JSON.stringify(data), {
-    status,
-    headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store", ...headers }
-  });
-}
-function fail(message, status = 400) { return json({ error: message }, status); }
-function enc(value) { return new TextEncoder().encode(value); }
+const SESSION_SECONDS = 60 * 60 * 8;
 function b64url(bytes) {
   let s = "";
   for (const b of bytes) s += String.fromCharCode(b);
