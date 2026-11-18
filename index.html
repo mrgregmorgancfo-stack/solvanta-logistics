@@ -98,6 +98,28 @@
     @media(max-width:560px){.container{width:calc(100% - 30px)}.section{padding:58px 0}.hero{min-height:560px}.hero h1{font-size:clamp(2.3rem,10vw,3.4rem)}.hero p{font-size:.97rem}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn{width:100%}.services-grid,.trust-steps,.policy-dropdown-content{grid-template-columns:1fr}.service-card img{height:205px}.showcase-grid{grid-template-columns:1fr 1fr;grid-template-rows:210px 150px 150px;gap:10px}.tracking-box{padding:22px 17px}.tracking-form-row{flex-direction:column}.tracking-form-row .btn{width:100%}.policy-details>summary{padding:19px 15px;gap:12px}.policy-details>summary strong{font-size:.94rem}.policy-details>summary small{font-size:.78rem}.policy-dropdown-content{padding:14px;gap:14px}.policy-card{padding:19px}.contact-form{padding:22px 17px}.form-row{grid-template-columns:1fr;gap:0}.footer-grid{grid-template-columns:1fr;gap:26px}.footer-brand{grid-column:auto}.footer-bottom{flex-direction:column;align-items:flex-start}.brand-name{font-size:1.05rem}.brand-tagline{font-size:.48rem;letter-spacing:.9px}.whatsapp-float{left:12px!important;right:auto!important;bottom:12px!important;width:53px;height:53px}#solvanta-translate{right:12px!important;left:auto!important;bottom:12px!important;max-width:calc(100vw - 82px);padding:7px;gap:5px}#solvanta-translate label{display:none}#solvanta-language{max-width:125px;padding:8px;font-size:12px}#solvanta-translate-button{padding:8px 9px;font-size:12px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
   </style>
+  
+<script>
+function initApollo() {
+  var n = Math.random().toString(36).substring(7);
+  var o = document.createElement("script");
+
+  o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n;
+  o.async = true;
+  o.defer = true;
+
+  o.onload = function() {
+    window.trackingFunctions.onLoad({
+      appId: "6afd1e86bbaf700014f3f610"
+    });
+  };
+
+  document.head.appendChild(o);
+}
+
+initApollo();
+</script>
+
 </head>
 <body>
   <header class="site-header">
